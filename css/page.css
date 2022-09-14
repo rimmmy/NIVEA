@@ -931,7 +931,7 @@
         padding: 15px; display: block; box-sizing: border-box; min-height: 120px; 
     }
     .detailTipsContainer .interestingContainer ul li dl dt{
-        font-size: 12px; font-weight: 400; color: #fff; max-width: 260px;  line-height: 20px;
+        font-size: 14px; font-weight: 400; color: #fff; max-width: 260px;  line-height: 20px;
         float: left;
     }
     .detailTipsContainer .interestingContainer ul li dl dd:first-of-type{
