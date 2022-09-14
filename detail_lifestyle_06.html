@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="detailTipsContainer Ls06">
+        <div class="tipsbackground">
+            <h2>어떤 타입의 샤워 제품을 선호하세요?</h2>
+            <div>
+                <a href="#shareTips" data-panel="shareTips">useful information</a>
+                <div id="shareTips">
+                    <input type="button" value="close" class="btn_Close">
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                    <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+                </div>
+            </div>
+            <div>
+                <img src="images/detail_ls_06_maine.png" alt="목욕하는 사진">
+                <dl>
+                    <dt>어떤 타입의 <mark>샤워 젤</mark>을<br>
+                        선호하세요?</dt>
+                    <dd>좋은 향을 지닌 샤워 제품을 사용해 보세요. 매일 샤워 중에 쓸 수 있는 샤워 제품, 그리고 인샤워 바디 로션까지 니베아의 제품들을 만나보세요.</dd>
+                </dl>
+            </div>
+            <article class="group2Content">
+                <img src="images/detail_ls_06_01.png" alt="내용관련 사진">
+                <div>
+                    <p>건조한 피부를 위한 집중적인 보습을 원하는 사람이 있고, 아침에 잠이 완전히 깨도록 상쾌함이 가득한 것을 원하는 사람이 있습니다. 운동 후에 근육을 풀어 주는 제품을 찾는 사람이나 샤워와 보습에 그렇게 많은 시간을 쏟기 원하지 않는 사람도 있습니다. 니베아는 이러한 다양한 요구에 맞는 제품을 모두 개발했습니다. 어떤 샤워 제품을 가장 좋아하세요?</p>
+                    <h3>수분 집중 공급: 건조한 피부를 이겨 내는 데에는 어떤 샤워 제품이 적합할까요?</h3>
+                    <p>
+                        샤워하면서 피부에 수분을 집중적으로 공급해 주세요.
+                    </p>
+                </div>
+            </article>
+            <article class="photoRight">
+                <div>
+                    <h3>찬물과 더운물을 바꿔 가며 샤워해 보세요.<br>
+                        잠이 안 깨는 머리와 운동을 즐기는 몸을 위해.</h3>
+                    <p>
+                        약 70%의 여성이 따뜻한 물 샤워를 좋아합니다. 나머지 30%만이 용기 있게 찬물과 더운물을 번갈아 씁니다. 이렇게 하면 순환이 촉진되고 면역 체계가 강화됩니다. 피부가 탱탱해지고 얼굴도 빛나는 뷰티 시크릿입니다!
+                        찬물과 더운물을 번갈아 쓰면 잠에서 완전히 깰 수 있습니다. 근육 재생을 돕기에, 힘든 운동 후에도 적합합니다. 저녁에 이렇게 샤워하면 몸의 긴장이 풀리고, 특히 마지막에 찬물로 행군 후 따뜻하게 감싸면 잠도 잘 들 수 있습니다.
+                    </p>
+                    <h3>
+                        샤워 직후 놀라운 피부 감촉을 느껴 보세요<br>
+                        : 니베아 인샤워 바디로션
+                    </h3>
+                    <p>
+                        샤워 후 바로 실크 블라우스를 입는다면? 니베아 인샤워 바디로션은 샤워 중에 피부에 수분을 공급하고 아름답게 가꿔 줍니다. 빠른 흡수로 바디크림이나 로션을 바른 후의 끈적임을 느낄 필요가 없습니다.
+                    </p>
+                </div>
+                <img src="images/detail_ls_06_02.png" alt="내용관련 사진">
+            </article>
+            <div class="subtitle">
+                <h3>샤워 부스 안에서의 혁신 : 빠른 바디 케어</h3>
+                <p>혁신적인 니베아 인샤워 제품으로 빠르고 간편하게 수분을 충전할 수 있습니다. 샤워 중 바르고 씻어내기만 하면 순식간에 흡수되고, 끈적한 느낌이 전혀 남지 않습니다. 니베아 인샤워 바디 로션은 모든 피부 타입에 적합하고, 다양한 향이 있습니다.</p>
+            </div>
+            <article class="photoLeft">
+                <img src="images/detail_ls_06_03.png" alt="내용관련 사진">
+                <div>
+                    <h4>실용적이고, 빠르고, 간편합니다</h4>
+                    <p>전세계 20%의 여성만이 샤워 후에 보습제품을 사용합니다.. 단지 시간이 없어서만은 아니고, 크림이나 로션 사용 후의 끈적함이 싫어서 바르지 않는 경우도 많다고 합니다.</p>
+                    <p>
+                        니베아는 샤워 중에 바르는 ""인샤워 바디로션"" 이라는 기존에 없던 혁신적인 제품으로 이러한 번거로움을 해결했습니다. 니베아 인샤워 바디 로션의 새로운 포뮬러는 물에 의해 활성화됩니다. 평소처럼 샤워 제품으로로 몸을 씻은 후 물기가 있는 상태에서 이 제품을 바로 사용합니다. 그리고 가볍게 물로 씻어내면, 피부에 유.수분 보습막 형성으로 피부가 윤기있고 매끄러워 집니다.  아침시간에도 간편하게 샤워와 보습을 동시에 할 수 있습니다.
+                        어떤 니베아 로션이나 크림이 나에게 적합할지 궁금하세요? 여기서 더 자세히 알아보세요.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="interestingContainer">
+            <h3>흥미로운 팁 모음</h3>
+            <ul class="tips carouselSlider">
+                <li>
+                    <img src="images/nivea-tips-page_01.png" alt="피부 트러블 케어의 효과 지성 피부를 위한 팁 알아보기">
+                    <dl>
+                        <dt>페이스-피부 트러블 케어의 효과 지성 피부를 위한 팁</dt>
+                        <dd><a href="detail_goodskin_06.html">더보기</a></dd>
+                        <dd>
+                            <strong> 지성 피부에 대해 꼭 알아야 하는 것</strong>
+                            <span>지성 피부를 위한 팁 번들거리는 피부 상태는 종종 피부 트러블로 이어지기도 합니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_05.png" alt="허벅지 셀룰라이트 간단한 팁과 조언 알아보기">
+                    <dl>
+                        <dt>바디-허벅지 셀룰라이트: 간단한 팁과 조언</dt>
+                        <dd><a href="detail_goodskin_08.html">더보기</a></dd>
+                        <dd>
+                            <strong> 허벅지에 생기는 셀룰라이트를 어떻게 없앨 수 있을까.</strong>
+                            <span>안타깝게도 특별한 치료법이 없습니다. 하지만 피부에 덜 나타나게 함으로써 기분이 나아질 방법은 있습니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_03.png" alt="피부를 실크처럼 매끈하게, 제모에 관한 간단한 팁 알아보기">
+                    <dl>
+                        <dt>바디-피부를 실크처럼 매끈하게: 제모에 관한 간단한 팁</dt>
+                        <dd><a href="detail_goodskin_07.html">더보기</a></dd>
+                        <dd>
+                            <strong>부드럽게 제모하는 요령과 가장 효과적인 방법.</strong>
+                            <span>부드럽게 제모하는 요령과 가장 효과적인 방법 어떤 제모 방법이 잘 맞으시나요?</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_04.png" alt="터치가 가진 힘을 알아보세요 알아보기">
+                    <dl>
+                        <dt>터치가 가진 힘을 알아보세요</dt>
+                        <dd><a href="detail_lifestyle_09.html">더보기</a></dd>
+                        <dd>
+                            <strong> 피부끼리 닿으면 우리의 몸과 마음이 살아납니다.</strong>
+                            <span>촉각의 원리와 촉각에 대한 많은 것을 파악할 수 있습니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                
+                <li>
+                    <img src="images/nivea-tips-page_06.png" alt="Q10 제품의 효과 알아보기">
+                    <dl>
+                        <dt>바디-Q10 제품의 효과</dt>
+                        <dd><a href="detail_lifestyle_10.html">더보기</a></dd>
+                        <dd>
+                            <strong>Q10 라인 제품으로 복합적인 피부 케어에 도움을 줄 수 있습니다.</strong>
+                            <span>피부를 부드럽게 만드는 라이프 스타일과 바디 로션 사용 팁을 알아보세요</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_07.png" alt="어떤 타입의 피부를 가지고 계신가요? 알아보기">
+                    <dl>
+                        <dt>바디-어떤 타입의 피부를 가지고 계신가요?</dt>
+                        <dd><a href="detail_goodskin_04.html">더보기</a></dd>
+                        <dd>
+                            <strong>어떤 바디 케어가 필요한지 확인하세요.</strong>
+                            <span>피부를 아름답고 빛나게 만드는 케어 방법도 피부 타입에 따라 달라집니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>  
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import url("https://hello.myfonts.net/count/3a5cb9");
+@font-face {
+  font-family: "Arita";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/Arita-dotum-Medium.woff) format("woff"); }
+
+@font-face {
+  font-family: "Arita";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/aritta-SemiBold.woff) format("woff"); }
+
+@font-face {
+  font-family: "brandon-grotesque";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/3A5CB9_0_0.woff) format("woff"); }
+
+@font-face {
+  font-family: "brandon-grotesque";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../font/3A5CB9_1_0.woff) format("woff"); }
+@font-face {
+  font-family: "brandon-grotesque";
+  src: url(../font/HVDFonts-BrandonGrotesque-Bold.woff) format("woff"); 
+  font-style: normal;
+  font-weight: 700;
+}

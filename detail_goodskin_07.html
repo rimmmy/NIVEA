@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="detailTipsContainer  Gs07">
+        <div class="tipsbackground">
+            <h2>피부를 실크처럼 매끈하게: 제모에 관한 간단한 팁</h2>
+            <div>
+                <a href="#shareTips" data-panel="shareTips">useful information</a>
+                <div id="shareTips">
+                    <input type="button" value="close" class="btn_Close">
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                    <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+                </div>
+            </div>
+            <div>
+                <img src="images/detail_gs_07_maine.png" alt="제모 관련 사진">
+                <dl>
+                    <dt>가장 효과 있는 <mark>제모</mark>방법은?</dt>
+                    <dd>부드럽게 제모하는 요령과 가장 효과적인 방법 어떤 제모 방법이 잘 맞으시나요? 제모하는 방법은 매우 많습니다. 좀 더 부드럽게 제거하는 방법, 좀 더 간단하게 제거하는 방법, 좀 더 철저하게 제거하는 방법, 효과가 좀 더 오래가는 방법까지 매우 다양합니다. 원하는 효과에 가장 잘 맞는 방법을 찾을 수 있도록 저희가 도와드릴게요.</dd>
+                </dl>
+            </div>
+            <article class="group2Content">
+                <img src="images/detail_gs_07_01.png" alt="내용관련 사진">
+                <div>
+                    <ul>
+                        <li>- 제모 크림과 젤의 케라틴 용해 성분이 빠르게 녹이지만 통증은 거의 없습니다.</li>
+                        <li>- 크림을 바르고 10분 정도 뒤에, 제모되며, 5-7일 후에 다소 부드럽게 자랍니다.</li>
+                        <li>- 민감성 피부, 상처나 일광화상을 입은 사람은 조심해야 합니다!<br>
+                            팁: 사전에 팔 안쪽에 발라 내성 테스트를 하세요.</li>
+                        <li>- 약 7%의 여성이 전동면도기를 선호합니다. 간단하지만 2-3일마다 반복해야 합니다. </li>
+                        <li>- 영구/반영구 제모를 원한다면 레이저 시술이 있습니다. 이 경우에는, 반드시 피부과 의사가 시술해야 합니다."</li>
+                    </ul>
+                    <h3>폼이나 젤 없이는 절대 제모하지 마세요</h3>
+                    <p>
+                        아무리 급해도, 쉐이빙 젤이나 폼이 없이는 절대 제모하지 마세요. 젤이나 폼은 면도날이 부드럽게 지나갈 수 있도록 피부에 막을 만들고, 면도 전에 피부를 진정시키는 성분도 함유하고 있습니다. 이것을 사용해야 상처가 나는 것을 피할 수 있고, 그래야 피부 트러블도 피할 수 있으므로, 제모 후 아주 부드러운 피부를 보며 기뻐할 수 있습니다.
+                        발모와 왁싱 관련 팁: 피부에 유수분이 없어야 결과가 가장 좋습니다. 그러니 24시간 전부터는 발모하려는 부위에 크림을 바르지 마세요.
+                    </p>
+                </div>
+            </article>
+            <div class="slider1wayContent">
+                <ul class="slider1way">
+                    <li>
+                        <img src="images/detail_gs_07_02.png" alt="쉐이빙으로 제모하는 사진">
+                        <dl>
+                            <dt>쉐이빙–매우 간단하게 제모하는 방법</dt>
+                            <dd>
+                                쉐이빙은 가장 많이 사용되는 제모 방법입니다.
+                                팁: 쉐이빙을 샤워 중에 하세요. 물에 젖어 부드러운 상태이기 때문에 손쉽게 제모할 수 있습니다. 그리고 면도날을 주기적으로 교체해야 피부가 자극을 받거나 상처가 생기는 것을 방지할 수 있습니다.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/detail_gs_07_03.png" alt="전동면도기로 제모하는 사진">
+                        <dl>
+                            <dt>전동면도기–회전 방식으로 제모</dt>
+                            <dd>
+                                전동면도기에 달린 작은 족집게나 판이 회전하면서 제모를 진행합니다. 약간 찌릿한 느낌이 있지만, 모근까지 뽑히기 때문이며 약 2-4주 동안은 지속되는 효과가 있습니다.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/detail_gs_07_04.png" alt="왁스를 이용하여 제모하는 사진">
+                        <dl>
+                            <dt>왁스를 사용한 제모–제모부위가 한동안 부드럽게 지속됩니다</dt>
+                            <dd>
+                                왁스로 제모하면 모근까지 함께 제거됩니다. 차가운 왁스 스트립이나 따뜻한 왁스가 있으면 집에서도 할 수 있습니다. 약 4%의 여성이 왁스로 하는 제모를 선호한다고 합니다.
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <article class="photoRight">
+                <div>
+                    <h3>어떤 제모 방식이 가장 적합할까요?</h3>
+                    <ul>
+                       <li>-다치지 않고 시간도 적게 들이면서 확실하게 제모할 방법을 찾는다면, 면도날이 적합합니다. 하지만 1-3일이면 털이 다시 자랍니다. </li>
+                       <li>-제모 효과가 오래가기를 원하면서, 가벼운 고통은 괜찮고 피부도 민감하지 않다면 전기면도기가 적합합니다.</li>
+                       <li>-가성비 좋고 1-2개월 지속되는 방법을 찾는다면, 왁싱을 추천합니다.</li>
+                       <li>-다리부위와 언더암부위를 빠르게 제모하고 싶지만, 면도날이 무섭다면? 제모 크림을 시도해 보세요.</li>
+                       <li>-영구/반영구 제모를 원한다면 레이저 시술이 최고입니다.</li>
+                    </ul>
+                    <h3>제모에 관한 간단한 팁</h3>
+                    <ul>
+                        <li>- 제모를 자주 하면 피부에 자극을 주고, 유수분도 빼앗깁니다.</li>
+                        <li>- 소독 후에 니베아 센서티브 바디 로션 또는 니베아 SOS 바디 로션처럼 진정성분을 함유한 바디 로션을 사용하세요.</li>
+                        <li>- 제모를 자주 하면 살을 파고들며 자라는 털이 생깁니다. 털을 막고 있는 각질을 주기적으로 제거해 주세요.</li>
+                    </ul>
+                </div>
+                <img src="images/detail_gs_07_05.png" alt="내용관련 사진">
+            </article>
+            <div class="subtitle">
+                <h3>하지만 주의해서 명심하세요.</h3>
+                <p>모든 제모 방법은 피부에 심한 긴장을 일으킵니다. 그러므로 무엇보다 가장 중요한 것은 제모 전에 준비를 잘하는 것과 제모 후에 시간과 노력을 들여서 더 특별하게 케어하는 것입니다.</p>
+            </div>
+            <article class="photoLeft">
+                <img src="images/detail_gs_07_06.png" alt="내용관련 사진">
+                <div>
+                    <h4>제모 전: 최상의 결과를 얻기 위해, 피부를 건조하고 유분이 없는 상태로 준비해야 합니다.</h4>
+                    <p>
+                        왁스로 제모할 예정이라면 그날은 해당 부위에 크림을 바르지 않아야 합니다. 왁스는 건조하고 유분이 없는 피부에 더 잘 달라붙습니다. 제모 크림이나 젤을 사용할 때도 크림 사용을 피하는 것이 좋습니다. 그렇지 않으면 성분 간에 이상 반응이 일어날 수도 있습니다.
+                    </p>
+                    <h4>제모 후: 피부 관리가 꼭 필요합니다</h4>
+                    <p>
+                        제모 직후에는 피부를 따가운 햇빛에 노출하는 것을 피해야 합니다. 그래야 땀에 의해 염증이 발생하는 것을 막을 수 있습니다.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="interestingContainer">
+            <h3>흥미로운 팁 모음</h3>
+            <ul class="tips carouselSlider">
+                <li>
+                    <img src="images/nivea-tips-page_01.png" alt="피부 트러블 케어의 효과 지성 피부를 위한 팁 알아보기">
+                    <dl>
+                        <dt>페이스-피부 트러블 케어의 효과 지성 피부를 위한 팁</dt>
+                        <dd><a href="detail_goodskin_06.html">더보기</a></dd>
+                        <dd>
+                            <strong> 지성 피부에 대해 꼭 알아야 하는 것</strong>
+                            <span>지성 피부를 위한 팁 번들거리는 피부 상태는 종종 피부 트러블로 이어지기도 합니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_05.png" alt="허벅지 셀룰라이트 간단한 팁과 조언 알아보기">
+                    <dl>
+                        <dt>바디-허벅지 셀룰라이트: 간단한 팁과 조언</dt>
+                        <dd><a href="detail_goodskin_08.html">더보기</a></dd>
+                        <dd>
+                            <strong> 허벅지에 생기는 셀룰라이트를 어떻게 없앨 수 있을까.</strong>
+                            <span>안타깝게도 특별한 치료법이 없습니다. 하지만 피부에 덜 나타나게 함으로써 기분이 나아질 방법은 있습니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_03.png" alt="피부를 실크처럼 매끈하게, 제모에 관한 간단한 팁 알아보기">
+                    <dl>
+                        <dt>바디-피부를 실크처럼 매끈하게: 제모에 관한 간단한 팁</dt>
+                        <dd><a href="detail_goodskin_07.html">더보기</a></dd>
+                        <dd>
+                            <strong>부드럽게 제모하는 요령과 가장 효과적인 방법.</strong>
+                            <span>부드럽게 제모하는 요령과 가장 효과적인 방법 어떤 제모 방법이 잘 맞으시나요?</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_04.png" alt="터치가 가진 힘을 알아보세요 알아보기">
+                    <dl>
+                        <dt>터치가 가진 힘을 알아보세요</dt>
+                        <dd><a href="detail_lifestyle_09.html">더보기</a></dd>
+                        <dd>
+                            <strong> 피부끼리 닿으면 우리의 몸과 마음이 살아납니다.</strong>
+                            <span>촉각의 원리와 촉각에 대한 많은 것을 파악할 수 있습니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                
+                <li>
+                    <img src="images/nivea-tips-page_06.png" alt="Q10 제품의 효과 알아보기">
+                    <dl>
+                        <dt>바디-Q10 제품의 효과</dt>
+                        <dd><a href="detail_lifestyle_10.html">더보기</a></dd>
+                        <dd>
+                            <strong>Q10 라인 제품으로 복합적인 피부 케어에 도움을 줄 수 있습니다.</strong>
+                            <span>피부를 부드럽게 만드는 라이프 스타일과 바디 로션 사용 팁을 알아보세요</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_07.png" alt="어떤 타입의 피부를 가지고 계신가요? 알아보기">
+                    <dl>
+                        <dt>바디-어떤 타입의 피부를 가지고 계신가요?</dt>
+                        <dd><a href="detail_goodskin_04.html">더보기</a></dd>
+                        <dd>
+                            <strong>어떤 바디 케어가 필요한지 확인하세요.</strong>
+                            <span>피부를 아름답고 빛나게 만드는 케어 방법도 피부 타입에 따라 달라집니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>      
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

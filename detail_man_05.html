@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>    <section class="detailContainer product">
+        <figure>
+            <img src="images/detail_man_05_maine.png" alt="니베아 맨 데오드란트 스틱 드라이 임팩트 사진 입니다.">
+            <figcaption>
+                <ul>
+                    <li>#데오드란트</li>
+                    <li>#모든 피부 타입</li>
+                </ul>
+                <h2>니베아 맨 데오드란트 스틱 드라이 임팩트</h2>
+                <small>NIVEA MEN deodorant stick dry impact </small>
+                <p>효과적인 땀 조절–DryPlus 시스템 및 미네랄 사용</p>
+                <div>
+                    <dl>
+                        <dt>상품 용량</dt>
+                        <dd><a href="#" class="active">40ml</a></dd>
+                    </dl>
+                </div>
+                <span>제품 번호 82893 (82893-06205-23)</span>
+                <a href="#product_information">제품 정보</a>
+                <div>
+                    <a href="#shareTips" data-panel="shareTips">공유</a>
+                    <div id="shareTips">
+                        <input type="button" value="close" class="btn_Close">
+                        <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                        <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                        <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+                    </div>
+                </div>
+            </figcaption>
+        </figure>
+        <div>
+            <ul>
+                <li><a href="#product_information">제품정보</a></li>
+                <li><a href="#ingredient">전성분 / 경고</a></li>
+            </ul>
+            <div id="product_information">
+                <h3>효능</h3>
+                <ul>
+                    <li>
+                        <img src="images/detail_man_05_effect03.png" alt="리프레싱">
+                        리프레싱  
+                    </li>
+                    <li>
+                        <img src="images/detail_man_05_effect06.png" alt="케어링">
+                        케어링  
+                    </li>
+                    <li>
+                        <img src="images/detail_man_05_effect07.png" alt="미네랄">
+                        미네랄  
+                    </li>
+                    <li>
+                        <img src="images/detail_man_05_effect01.png" alt="모든 피부 타입">
+                        모든 피부 타입  
+                    </li>
+                    <li>
+                        <img src="images/detail_man_05_effect02.png" alt="보통피부">
+                        보통피부 
+                    </li>
+                   
+                </ul>
+                <p>
+                    <mark>48시간 발한 방지 보호 및 NIVEA® MEN 케어 콤플렉스</mark>
+                    <mark>피부과에서 입증된 피부 내성</mark>
+                    <mark>알코올, 착색제 또는 방부제 없음</mark>
+                </p>
+                <article>
+                    <h4>이 제품에 대해 더 알아보기</h4>
+                    <ul>
+                        <li>미네랄 성분이 함유된 드라이 포물러가 겨드랑이를 보송보송하게 해 줍니다.</li>
+                        <li>땀 발생을 억제하고 땀 냄새를 방지해줍니다.</li>
+                        <li>상쾌한 파우더 향</li>
+                    </ul>
+                </article>
+                <article>
+                    <img src="images/detail_man_05_use.png" alt="">
+                    <div>
+                        <h4>사용 방법</h4>
+                        <ol>
+                            <li>뚜껑과 보호마개를 열고</li>
+                            <li>하단 중앙의 링을 오른쪽으로 돌려 스틱이 올라오면</li>
+                            <li>언더암에 발라주고, 완전히 건조된 후 의복을 착용하세요</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            <div id="ingredient">
+                <ul>
+                    <li>
+                        특별한 성분
+                        <p>미네랄</p>
+                    </li>
+                    <li>
+                        성분 목록 
+                        <p>유효성분:알루미늄지르코늄테트라클로로하이드렉스글라이신,기타첨가제:글리세릴스테아레이트SE,마그네슘알루미늄실리케이트,스테아릴알코올,시클로메티콘,아보카도유,알루미늄세스퀴클로로하이드레이트,2-옥틸도데칸올,조합향료,탤크,폴리옥시프로필렌부틸에텔,하이드로제네이티드캐스터오일 미포함 알코올, 방부제</p>
+                    </li>
+                    <li>
+                        경고
+                        <p>주의:고압가스를 사용한 가연성 제품으로서 위험하므로 다음의 주의를 지킬 것 1.불꽃을 향하여 사용하지 말 것 2.난로, 풍로 등 화기부근에서 사용하지 말 것 3.화기를 사용하고 있는 실내에서 사용하지 말 것 4.온도가 40˚C 이상의 장소에 보관하지 말 것 5.밀폐된 실내에서 사용 한 후 에는 반드시 환기를 실시 할 것 6.불 속에 버리지 말 것 7.사용 후 남은 가스가 없도록 하여 버릴 것 8.밀폐된 장소에 보관 하지 말 것 9. 동일한 부위에 연속해서 3초이상 분사하지 말고 피부에서 15cm 이상 떨어져서 사용 할 것</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="checkContainer">
+                <h3>위 범주 내 해당되는 상품 더 알아보기</h3>
+                <ul>
+                    <li>
+                        <img src="images/nivea-product-page6_06.png" alt="니베아 맨 데오드란트 스프레이 드라이 임팩트 제품 알아보기">
+                        <dl>
+                            <dt>데오드란트</dt>
+                            <dd>니베아 맨 데오드란트 스프레이 드라이 임팩트</dd>
+                            <dd><a href="detail_man_08.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-product-page6_10.png" alt="니베아 맨 데오드란트 스틱 쿨킥 제품 알아보기">
+                        <dl>
+                            <dt>데오드란트</dt>
+                            <dd>니베아 맨 데오드란트 스틱 쿨킥</dd>
+                            <dd><a href="detail_man_07.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-product-page6_07.png" alt="니베아 맨 데오드란트 롤온 드라이 임팩트 제품 알아보기">
+                        <dl>
+                            <dt>데오드란트</dt>
+                            <dd>니베아 맨 데오드란트 롤온 드라이 임팩트</dd>
+                            <dd><a href="detail_man_01.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

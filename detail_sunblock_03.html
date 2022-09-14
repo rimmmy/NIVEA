@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="detailTipsContainer sb03">
+        <div class="tipsbackground">
+            <h2>햇빛에 장시간 노출되었을 때의 즉각적 피부 진정법</h2>
+            <div>
+                <a href="#shareTips" data-panel="shareTips">useful information</a>
+                <div id="shareTips">
+                    <input type="button" value="close" class="btn_Close">
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                    <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+                </div>
+            </div>
+            <div>
+                <img src="images/detail_sb_03_maine.png" alt="햇빛에 장시간 노출된 사진">
+                <dl>
+                    <dt>
+                        피부가 그을렸을 때의<br>
+                        <mark>응급 처치</mark>
+                    </dt>
+                    <dd>피부가 그을렸을 때는 피부를 진정시키는 것이 중요합니다. 너무 장시간 피부가 햇빛에 노출되지 않도록 하는 것이 제일 중요합니다! 하지만 자외선 차단제를 충분히 바르는 것을 깜빡하는 날도 있겠죠. 이럴 땐 즉시 조치를 취하는 것이 중요합니다. 여기서 응급 처치 팁을 확인하세요.</dd>
+                </dl>
+            </div>
+            <article class="group2Content">
+                <img src="images/detail_sb_03_01.png" alt="내용관련 사진">
+                <div>
+                    <h3>햇빛을 너무 많이 받았을 때–응급 처치</h3>
+                    <p>
+                        햇빛을 너무 많이 받았다면, 몸을 식히고, 수분을 많이 섭취하고, 무엇보다 그늘로 바로 옮겨야 합니다. 일광욕으로 탈수현상이 일어나면 가능한 한 빨리 수분 균형을 맞춰야 합니다. 햇빛을 너무 많이 받았다는 것을 인지하자마자 해가 없는 곳으로 이동하고, 미온수로 샤워를 한 후 휴식을 취해야 합니다. 진한 크림보다는 애프터 선 제품으로 붉어진 피부를 식히고 수분을 공급하는 것이 가장 좋습니다.
+                        주의: 심각한 피부 그을림, 구역질, 통증 중 하나 이상의 증상이 있으면, 반드시 의사와 상담하세요!
+                    </p>
+                    <h3>피부를 진정시키기 위해 무엇을 해야 할까요?</h3>
+                    <p>
+                        장시간 햇빛 노출로 인해 피부가 그을리는 것은 정도의 심각성을 떠나, 피부에 잠재적으로 부정적 영향을 미칠 수 있습니다. 그러므로 너무 장시간 노출되는 일이 없도록 주의 해야 합니다.
+                    </p>
+                </div>
+            </article>
+            <article class="photoRight">
+                <img src="images/detail_sb_03_02.png" alt="내용관련 사진">
+                <div>
+                    <h3>자연적 응급 처치</h3>
+                    <p>피부를 잘 식히고 염증을 예방하려면 린넨이나 면을 물에 적셔 냉찜질을 시도해 보세요. 냉찜질에는 쿨링과 염증 예방 효과가 있습니다. 식물 추출 오일이나 녹차에 적신 팩 역시 효과적입니다. 장시간 햇빛에 노출된 피부를 적어도 한 시간에서 두 시간 이상 식히고, 다음날 햇빛이 닿지 않게 하는 것도 중요합니다. 이렇게 처치하면 증세가 가라앉는 데 도움이 될 수 있습니다.</p>
+                    <h3>카모마일 진정 에센스</h3>
+                    <p>
+                        카모마일 에센스의 차가운 농축액이 자극을 받은 피부에 진정 효과를 제공합니다.
+                    </p>
+                </div>
+            </article>
+            <div class="subtitle">
+                <h3>자외선에 특별히 취약한 신체 부위</h3>
+                <p>안타깝게도 신체의 모든 부분은 그을림 현상을 겪을 수 있습니다. 하지만 분명히 자외선에 특히 잘 노출되는 부위가 있습니다. 보호를 받지 못하는 위치상의 문제이기도 하고, 해당 부위의 피부가 민감해서이기도 합니다.</p>
+            </div>
+            <article class="photoLeft">
+                <img src="images/detail_sb_03_03.png" alt="내용관련 사진">
+                <div>
+                    <h4>"양지바른 곳"–특별한 보호가 필요한 부위</h4>
+                    <p>우리 몸에도 "양지바른 곳"이 있습니다. 얼굴이 대표적인데, 그중에서도 콧날, 입술, 눈두덩, 이마, 양 볼이 햇빛을 특히 잘 받습니다. 얼굴의 피부는 보호를 받지 못한 채로 자외선에 매일 노출됩니다. 게다가 얼굴 피부는 훨씬 얇으므로 그만큼 더 예민할 수밖에 없는데, 이것이 얼굴에 자외선 차단을 더 꼼꼼히 해야 하는 이유입니다. 휴가지에서는 보다 강력한 차단 기능의 선 크림을 발라야 함을 잊지 마시고, 일상에서는 자외선 차단 지수가 있는 데이 크림을 발라 주세요. 그을림 현상을 쉽게 겪을 수 있는 부위로는 쇄골 라인과 목, 발등, 어깨, 귀, 두피 등이 있습니다. 자외선 차단 지수가 높은 선 크림을 바르고 옷으로도 가려주는 것이 위험한 자외선으로부터 피부를 보호할 수 있는 최고의 방법입니다.</p>
+                    <h4>머리를 덮어 주는 것을 잊지 마세요!</h4>
+                    <p>
+                        직사광선이 내리쬘 때는 머리를 덮어 주는 것이 가장 좋습니다. 특히 어린이들에게 이것이 중요합니다.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="interestingContainer">
+            <h3>흥미로운 팁 모음</h3>
+            <ul class="tips carouselSlider">
+                <li>
+                    <img src="images/nivea-tips-page_01.png" alt="피부 트러블 케어의 효과 지성 피부를 위한 팁 알아보기">
+                    <dl>
+                        <dt>페이스-피부 트러블 케어의 효과 지성 피부를 위한 팁</dt>
+                        <dd><a href="detail_goodskin_06.html">더보기</a></dd>
+                        <dd>
+                            <strong> 지성 피부에 대해 꼭 알아야 하는 것</strong>
+                            <span>지성 피부를 위한 팁 번들거리는 피부 상태는 종종 피부 트러블로 이어지기도 합니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_05.png" alt="허벅지 셀룰라이트 간단한 팁과 조언 알아보기">
+                    <dl>
+                        <dt>바디-허벅지 셀룰라이트: 간단한 팁과 조언</dt>
+                        <dd><a href="detail_goodskin_08.html">더보기</a></dd>
+                        <dd>
+                            <strong> 허벅지에 생기는 셀룰라이트를 어떻게 없앨 수 있을까.</strong>
+                            <span>안타깝게도 특별한 치료법이 없습니다. 하지만 피부에 덜 나타나게 함으로써 기분이 나아질 방법은 있습니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_03.png" alt="피부를 실크처럼 매끈하게, 제모에 관한 간단한 팁 알아보기">
+                    <dl>
+                        <dt>바디-피부를 실크처럼 매끈하게: 제모에 관한 간단한 팁</dt>
+                        <dd><a href="detail_goodskin_07.html">더보기</a></dd>
+                        <dd>
+                            <strong>부드럽게 제모하는 요령과 가장 효과적인 방법.</strong>
+                            <span>부드럽게 제모하는 요령과 가장 효과적인 방법 어떤 제모 방법이 잘 맞으시나요?</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_04.png" alt="터치가 가진 힘을 알아보세요 알아보기">
+                    <dl>
+                        <dt>터치가 가진 힘을 알아보세요</dt>
+                        <dd><a href="detail_lifestyle_09.html">더보기</a></dd>
+                        <dd>
+                            <strong> 피부끼리 닿으면 우리의 몸과 마음이 살아납니다.</strong>
+                            <span>촉각의 원리와 촉각에 대한 많은 것을 파악할 수 있습니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                
+                <li>
+                    <img src="images/nivea-tips-page_06.png" alt="Q10 제품의 효과 알아보기">
+                    <dl>
+                        <dt>바디-Q10 제품의 효과</dt>
+                        <dd><a href="detail_lifestyle_10.html">더보기</a></dd>
+                        <dd>
+                            <strong>Q10 라인 제품으로 복합적인 피부 케어에 도움을 줄 수 있습니다.</strong>
+                            <span>피부를 부드럽게 만드는 라이프 스타일과 바디 로션 사용 팁을 알아보세요</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_07.png" alt="어떤 타입의 피부를 가지고 계신가요? 알아보기">
+                    <dl>
+                        <dt>바디-어떤 타입의 피부를 가지고 계신가요?</dt>
+                        <dd><a href="detail_goodskin_04.html">더보기</a></dd>
+                        <dd>
+                            <strong>어떤 바디 케어가 필요한지 확인하세요.</strong>
+                            <span>피부를 아름답고 빛나게 만드는 케어 방법도 피부 타입에 따라 달라집니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+</section>
+              
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

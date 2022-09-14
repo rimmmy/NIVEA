@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="detailContainer product">
+        <figure>
+            <img src="images/detail_man_21_maine.png" alt="니베아 맨 센서티브 원샷 올케어 올인원 로션 사진 입니다.">
+            <figcaption>
+                <ul>
+                    <li>#쉐이빙</li>
+                    <li>#민감한 피부</li>
+                </ul>
+                <h2>니베아 맨 센서티브 원샷 올케어 올인원 로션</h2>
+                <small>NIVEA MEN sensitive one shot all care all in one lotion</small>
+                <p>스킨, 에센스, 로션을 한번에 해결할 수 있는 올인원 로션</p>
+                <div>
+                    <dl>
+                        <dt>상품 용량</dt>
+                        <dd><a href="#" class="active">125ml</a></dd>
+                    </dl>
+                </div>
+                <span>제품 번호 88591 (88591-06206-20)</span>
+                <a href="#product_information">제품 정보</a>
+                <div>
+                    <a href="#shareTips" data-panel="shareTips">공유</a>
+                    <div id="shareTips">
+                        <input type="button" value="close" class="btn_Close">
+                        <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                        <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                        <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+                    </div>
+                </div>
+            </figcaption>
+        </figure>
+        <div>
+            <ul>
+                <li><a href="#product_information">제품정보</a></li>
+                <li><a href="#ingredient">전성분 / 경고</a></li>
+            </ul>
+            <div id="product_information">
+                <h3>효능</h3>
+                <ul>
+                    <li>
+                        <img src="images/detail_man_21_effect01.png" alt="수염 있는 피부">
+                        수염 있는 피부   
+                    </li>
+                    <li>
+                        <img src="images/detail_man_21_effect02.png" alt="안티에이징">
+                        안티에이징  
+                    </li>
+                    <li>
+                        <img src="images/detail_man_21_effect03.png" alt="아몬드오일">
+                        아몬드오일  
+                    </li>
+                    <li>
+                        <img src="images/detail_man_21_effect04.png" alt="캐모마일꽃추출물">
+                        캐모마일꽃추출물 
+                    </li>
+                    <li>
+                        <img src="images/detail_man_21_effect05.png" alt="민감한 피부">
+                        민감한 피부 
+                    </li>
+                   
+                </ul>
+                <p>
+                    <mark>건조하고, 당기고, 까칠해진 민감한 피부를 위한 진정 솔루션</mark>
+                </p>
+                <article>
+                    <h4>이 제품에 대해 더 알아보기</h4>
+                    <ul>
+                        <li>캐모마일 꽃 추출물 및 아몬드 오일 성분이 함유되어 잦은 면도로 자극받아 민감해진 피부를 즉각적으로 진정시켜주고, 피부를 오랫동안 촉촉하게 유지해줍니다.</li>
+                        <li>피부에 부드럽게 발리며, 끈적임 없는 가벼운 올인원 텍스쳐로 피부를 지켜줍니다.</li>
+                        <li>에탄올 무첨가 성분*으로 피부를 편안하게 케어해줍니다. (*에탄올을 의도적으로 넣지 않았음을 의미합니다.)</li>
+                    </ul>
+                </article>
+                <article>
+                    <img src="images/detail_man_21_use.png" alt="">
+                    <div>
+                        <h4>사용 방법</h4>
+                        <ol>
+                            <li>면도나 세안 후, 적당량을 손에 덜어 얼굴과 목에 골고루 바릅니다.</li>
+                            <li>외부 환경으로 자극받은 쉬운 남성 피부를 케어하고 잦은 면도로 인한 미세한 상처로부터 효과적으로 보호해주는 니베아 맨 센서티브 쉐이빙 제품을 함께 사용하시면 더욱 효과적입니다.</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            <div id="ingredient">
+                <ul>
+                    <li>
+                        특별한 성분
+                        <p>캐모마일꽃추출물, 아몬드오일</p>
+                    </li>
+                    <li>
+                        성분 목록 
+                        <p>정제수, 글리세린, 아이소프로필팔미테이트, 페녹시에탄올, 스위트아몬드오일, 카보머, 향료, 에틸헥실글리세린, 말토덱스트린, 소듐하이드록사이드, 비에이치티, 리날룰, 마트리카리아꽃추출물, 쿠마린</p>
+                    </li>
+                    <li>
+                        경고
+                        <p>1. 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어 오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담 할 것 2. 상처가 있는 부위 등에는 사용을 자제할 것 3. 보관 및 취급 시의 주의사항 가.어린이의 손이 닿지 않는 곳에 보관 할 것 나.직사광선을 피해서 보관할 것</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="checkContainer">
+                <h3>위 범주 내 해당되는 상품 더 알아보기</h3>
+                <ul>
+                    <li>
+                        <img src="images/nivea-product-page7_08.png" alt="니베아 맨 센서티브 애프터 쉐이브 스킨 제품 알아보기">
+                        <dl>
+                            <dt>쉐이빙</dt>
+                            <dd>니베아 맨 센서티브 애프터 쉐이브 스킨</dd>
+                            <dd><a href="detail_man_20.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-product-page4_06.png" alt="니베아 맨 센서티브 리커버리 애프터 쉐이브 로션 제품 알아보기">
+                        <dl>
+                            <dt>쉐이빙</dt>
+                            <dd>니베아 맨 센서티브 리커버리 애프터 쉐이브 로션</dd>
+                            <dd><a href="detail_man_16.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-product-page4_07.png" alt="니베아 맨 센서티브 리커버리 쉐이빙 폼 제품 알아보기">
+                        <dl>
+                            <dt>쉐이빙</dt>
+                            <dd>니베아 맨 센서티브 리커버리 쉐이빙 폼</dd>
+                            <dd><a href="detail_man_15.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+            </div>
+        </div>
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="listContainer product">
+        <h2>제품</h2>
+        <!-- <img src="images/nivea-product-page.png" alt=""> -->
+        <div class="category">
+            <ul>
+             <li>
+                 <a href="#">카테고리</a>
+                 <ol>
+                     <li><a href="product.html">전체상품</a></li>
+                     <li><a href="face.html">페이스</a></li>
+                     <li><a href="body.html">바디</a></li>
+                     <li><a href="man.html">남성</a></li>
+                     <li><a href="sun.html">선(sun)</a></li>
+                 </ol>
+             </li>
+             <li>
+                 <a href="#">인기상품 순</a>
+                 <ol>
+                     <li><a href="#">신상품 순</a></li>
+                 </ol>
+             </li>
+            </ul>
+             <span>전체 109개 상품</span>
+         </div>
+        <ul>
+            <li>
+                <img src="images/nivea-product-page8_01.png" alt="니베아 데오드란트 롤온 내추럴리굿 제품을 알아보세요">
+                <dl>
+                    <dt>데오드란트</dt>
+                    <dd>니베아 데오드란트 롤온 내추럴리굿</dd>
+                    <dd><a href="detail_body_14.html">더 보기</a></dd>
+                </dl>
+            </li>
+            <li>
+                <img src="images/nivea-product-page8_02.png" alt="니베아 더마 리페어&케어 바디로션 제품을 알아보세요">
+                <dl>
+                    <dt>바디 케어</dt>
+                    <dd>니베아 더마 리페어&케어 바디로션</dd>
+                    <dd><a href="detail_body_02.html">더 보기</a></dd>
+                </dl>
+            </li>
+            <li>
+                <img src="images/nivea-product-page8_03.png" alt="니베아 데오드란트 내추럴리 굿 미스트 제품을 알아보세요">
+                <dl>
+                    <dt>데오드란트</dt>
+                    <dd>니베아 데오드란트 내추럴리 굿 미스트</dd>
+                    <dd><a href="detail_body_03.html">더 보기</a></dd>
+                </dl>
+            </li>
+            <li>
+                <img src="images/nivea-product-page8_04.png" alt="니베아 데오드란트 스프레이 엑스트라 화이트 제품을 알아보세요">
+                <dl>
+                    <dt>데오드란트</dt>
+                    <dd>니베아 데오드란트 스프레이 엑스트라 화이트</dd>
+                    <dd><a href="detail_body_16.htm">더 보기</a></dd>
+                </dl>
+            </li>
+            <li>
+                <img src="images/nivea-product-page8_05.png" alt="니베아 익스프레스 바디 로션 제품을 알아보세요">
+                <dl>
+                    <dt>바디 케어</dt>
+                    <dd>니베아 익스프레스 바디 로션</dd>
+                    <dd><a href="detail_body_36.html">더 보기</a></dd>
+                </dl>
+            </li>
+        </ul>
+
+        <div class="paging">
+            <a href="">&lt;</a>
+            <a href="">&gt;</a>
+            <ol>
+                <li><a href="product.html">1</a></li>
+                <li><a href="product_02.html">2</a></li>
+                <li><a href="product_03.html">3</a></li>
+                <li><a href="product_04.html">4</a></li>
+                <li><a href="product_05.html">5</a></li>
+                <li><a href="product_06.html">6</a></li>
+                <li><a href="product_07.html">7</a></li>
+                <li><a href="#"  class="active">8</a></li>
+            </ol>
+        </div>
+        
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

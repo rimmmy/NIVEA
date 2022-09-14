@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="niveacream">
+        <h2>니베아 크림</h2>
+        <article>
+            <h3>우리의 크림</h3>
+            <p>
+                크림은 니베아의 대표적인 제형입니다. 
+                니베아의 다양한 크림을 한 눈에 살펴보세요. 파란통 크림으로도 잘 알려진, '니베아 크림'은 모든 가정의 필수품입니다. 
+                산뜻한 사용감의 '니베아 소프트 크림'은 비타민 E와 호호바 오일을 함유하고 있어 끈적임 없이 빠르게 흡수되면 서도 탁월한 보습을 제공합니다. 그리고 상쾌하고 남자다운 향을 지닌, 남성 전용 '니베아 맨 크림'까지, 당신의 니즈에 따른 크림으로 스킨케어 하세요!
+            </p>
+        </article>
+        <ul>
+            <li>
+                <div>
+                     <h4>
+                         니베아 크림
+                         <small>NIVEA CREAM</small>
+                     </h4>
+                     <p>피부 타입에 상관없이 어린이와 어른 모두 건조한<br> 부위에 사계절 내내 사용할 수 있는 다목적 보습 크림</p>
+                     <a href="detail_body_46.html">자세히보기 &gt;</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>
+                        니베아 소프트 크림 믹스미<br> 에디션-허브 오아시스
+                        <small>NIVEA SOFT CREAM MIX ME EDITION - HERD OASIS</small>
+                    </h4>
+                    <p>비타민 E 아세테이트가 자연스럽고<br> 건강한 피부 상태를 유지 시켜 줍니다.</p>
+                    <a href="detail_body_30.html">자세히보기 &gt;</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>
+                        니베아 맨 크림
+                        <small>NIVEA MEN CREAM</small>
+                    </h4>
+                    <p>남자를 위한 포뮬라:무심한 듯 산뜻한<br> 남자의 피부로 케어해 줍니다.</p>
+                    <a href="detail_man_34.html">자세히보기 &gt;</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>
+                        니베아 소프트 크림 믹스미<br> 에디션-캐리비안 후르츠
+                        <small>NIVEA SOFT CREAM MIX ME EDITION - Caribbean fruit</small>
+                    </h4>
+                    <p>파인애플, 씨트러스와 같은 열대 과일의 첫 향과 코코넛 워터로<br> 이어지는 은은한 과일 향이 하루의 활기를 전해 줍니다.</p>
+                    <a href="detail_body_28.html">자세히보기 &gt;</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>
+                        니베아 소프트 크림
+                        <small>NIVEA SOFT CREAM</small>
+                    </h4>
+                    <p>니베아 소프트 크림은 매일 얼굴 및 전신에 발라 효과적으로<br> 보습 상태를 유지할 수 있는 산뜻한 사용감의 크림입니다.</p>
+                    <a href="detail_body_32.html">자세히보기 &gt;</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>
+                        니베아 소프트 크림 믹스미<br> 에디션-베리 플라워
+                        <small>NIVEA SOFT CREAM MIX ME EDITION - berry flower</small>
+                    </h4>
+                    <p>라즈베리의 첫 향으로 시작해 시간이 지나면 은은한 사과와<br> 플로럴 향이 남아 기분 좋은 향기를 선물합니다.</p>
+                    <a href="detail_body_26.html">자세히보기 &gt;</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

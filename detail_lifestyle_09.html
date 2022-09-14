@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="detailTipsContainer Ls09">
+        <div class="tipsbackground">
+            <h2>터치가 가진 힘을 알아보세요</h2>
+            <div>
+                <a href="#shareTips" data-panel="shareTips">useful information</a>
+                <div id="shareTips">
+                    <input type="button" value="close" class="btn_Close">
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                    <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+                </div>
+            </div>
+            <div>
+                <img src="images/detail_ls_09_maine.png" alt="아기 사진">
+                <dl>
+                    <dt>일상에서 <mark>촉감</mark>이 갖는 힘</dt>
+                    <dd>피부끼리 닿으면 우리의 몸과 마음이 살아납니다 터치가 가진 힘과 어린 시절부터 성인이 되어서까지 터치가 우리 삶에 주는 영향에 대해 알아보세요. 촉각의 원리와 촉각에 대한 많은 것을 파악할 수 있습니다.</dd>
+                </dl>
+            </div>
+            <article class="group2Content">
+                <img src="images/detail_ls_09_01.png" alt="내용관련 사진">
+                <div>
+                    <h3>실제 촉각은 어떻게 작동할까요?</h3>
+                    <p>
+                        피부 아래에는 약 5백만 개의 촉각 수용기가 있으며, 감각을 느끼면 척수를 통해 뇌로 신호를 보냅니다.
+                    이 촉각 수용기의 주된 역할은 몸을 보호하는 것입니다. 가령, 몸이 아프다든지 너무 춥다든지 하는 신호를 감지하면, 뇌는 고통에서 벗어나기 위해 몸을 웅크린다든지, 몸의 떨어 체온을 높이는 등 적절한 대응을 하도록 합니다.
+                    </p>
+                    <h3>감각계통의 실제</h3>
+                    <p>
+                        우리 몸의 감각계통은 우리가 접촉, 통증, 압력, 열, 움직임을 느낄 수 있게 합니다. 이 계통은 열이나 압력이 오면 활성화되는 몸 전체에 퍼져 있는 센서 연결망에 의지합니다. 몸이 각 부위에서 무슨 일이 일어나는지를 파악할 수 있도록, 이 센서들은 뉴런을 통해 뇌로 정보를 보냅니다. 척수를 통해 뇌로 신호가 전달됩니다. 신호가 도착하면 뇌는 그 신호를 해석해서 통증이나 접촉, 온도 등 어떤 감각이 느껴지는지를 알아냅니다.
+                    </p>
+                    <h3>감각에 대한 재미있는 사실</h3>
+                    <p>
+                        태아가 엄마 배 속에서 촉감을 느낀다는 사실을 알고 계셨나요? 촉각을 느끼면 태아는 자궁 안에서 움직입니다. 촉각으로 방향을 인지하고, 위안을 느끼기도 합니다. 이것이 갓난아기들이 꼭 안기기를 좋아하는 이유입니다.
+                    </p>
+                </div>
+            </article>
+            <div class="slider1wayContent">
+                <ul class="slider1way">
+                    <li>
+                        <img src="images/detail_ls_09_02.png" alt="아이 크림 바르는 사진">
+                        <dl>
+                            <dt>신뢰감</dt>
+                            <dd>터치와 스킨십은 신뢰를 형성하며, 아이들의 성장에 매우 중요합니다. 니베아 크림을 부드럽게 발라 주는 것으로 매일  아이와 촉감을 나누며 스킨쉽하는 경험을 할 수 있습니다.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/detail_ls_09_03.png" alt="아이 크림 바르는 사진">
+                        <dl>
+                            <dt>신뢰</dt>
+                            <dd>다친 무릎을 위한 부드러운 입맞춤이나 배앓이를 낫게 하는 약손. 터치의 힘은 피부로 스며들어 와 우리의 몸과 마음을 위로합니다. 사람들 간의 신체 접촉은 유대감을 형성하는 데에도 기여합니다. 연구 결과, 사랑이 담긴 터치가 의사소통을 더 원활하게 만든다고 합니다.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/detail_ls_09_04.png" alt="아이 크림 바르는 사진">
+                        <dl>
+                            <dt>감정적인 힘</dt>
+                            <dd>니베아 크림과 같은 보호 크림을 바르면서 생기는 신체 접촉은 아이들에게 안전하다는 느낌과 신뢰감을 느끼게 합니다. 목욕 후 머리부터 발까지 크림으로 마사지하는 이 느긋한 시간이 아이들을 차분하게 만듭니다. 부모와 아이 간의 유대감도 지속되게 합니다.</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <article class="crosstext">
+                <h3>x</h3>
+                <ul>
+                    <li>
+                        <img src="images/detail_ls_09_05.png" alt="엄마랑 아기 안고 있는 사진">
+                        <dl>
+                            <dt>잊지 못할 기억 만들기</dt>
+                            <dd>엄마에게 안겨 있는 아이는 촉감을 통해 친밀감과 안전을 느낍니다. 아이들은 시각이나 후각보다 먼저 촉각적 감각을 자궁 안에서 경험합니다. 니베아 크림처럼 농도가 진한 스킨케어 제품을 아이의 피부에 문지르면 오래 지속될 터치의 기억을 만들어 줄 수 있습니다.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>안정감을 주고 스트레스를 완화하는 터치</dt>
+                            <dd>연구 결과, 성장하면서 스킨십을 더 많이 경험한 사람이 더 안정적이고 스트레스에 덜 민감하다고 합니다. 우리는 자라면서 이런 다정한 순간들을 마음속에 간직합니다. 터치는 어린이의 인성과 사회성 발달에 있어 신체적으로 그리고 심리적으로 기여합니다. </dd>
+                        </dl>
+                        <img src="images/detail_ls_09_06.png" alt="아기 손잡고 있는 사진">
+                    </li>
+                </ul>
+            </article>
+        </div>
+        <div class="interestingContainer">
+            <h3>흥미로운 팁 모음</h3>
+            <ul class="tips carouselSlider">
+                <li>
+                    <img src="images/nivea-tips-page_01.png" alt="피부 트러블 케어의 효과 지성 피부를 위한 팁 알아보기">
+                    <dl>
+                        <dt>페이스-피부 트러블 케어의 효과 지성 피부를 위한 팁</dt>
+                        <dd><a href="detail_goodskin_06.html">더보기</a></dd>
+                        <dd>
+                            <strong> 지성 피부에 대해 꼭 알아야 하는 것</strong>
+                            <span>지성 피부를 위한 팁 번들거리는 피부 상태는 종종 피부 트러블로 이어지기도 합니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_05.png" alt="허벅지 셀룰라이트 간단한 팁과 조언 알아보기">
+                    <dl>
+                        <dt>바디-허벅지 셀룰라이트: 간단한 팁과 조언</dt>
+                        <dd><a href="detail_goodskin_08.html">더보기</a></dd>
+                        <dd>
+                            <strong> 허벅지에 생기는 셀룰라이트를 어떻게 없앨 수 있을까.</strong>
+                            <span>안타깝게도 특별한 치료법이 없습니다. 하지만 피부에 덜 나타나게 함으로써 기분이 나아질 방법은 있습니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_03.png" alt="피부를 실크처럼 매끈하게, 제모에 관한 간단한 팁 알아보기">
+                    <dl>
+                        <dt>바디-피부를 실크처럼 매끈하게: 제모에 관한 간단한 팁</dt>
+                        <dd><a href="detail_goodskin_07.html">더보기</a></dd>
+                        <dd>
+                            <strong>부드럽게 제모하는 요령과 가장 효과적인 방법.</strong>
+                            <span>부드럽게 제모하는 요령과 가장 효과적인 방법 어떤 제모 방법이 잘 맞으시나요?</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_04.png" alt="터치가 가진 힘을 알아보세요 알아보기">
+                    <dl>
+                        <dt>터치가 가진 힘을 알아보세요</dt>
+                        <dd><a href="detail_lifestyle_09.html">더보기</a></dd>
+                        <dd>
+                            <strong> 피부끼리 닿으면 우리의 몸과 마음이 살아납니다.</strong>
+                            <span>촉각의 원리와 촉각에 대한 많은 것을 파악할 수 있습니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                
+                <li>
+                    <img src="images/nivea-tips-page_06.png" alt="Q10 제품의 효과 알아보기">
+                    <dl>
+                        <dt>바디-Q10 제품의 효과</dt>
+                        <dd><a href="detail_lifestyle_10.html">더보기</a></dd>
+                        <dd>
+                            <strong>Q10 라인 제품으로 복합적인 피부 케어에 도움을 줄 수 있습니다.</strong>
+                            <span>피부를 부드럽게 만드는 라이프 스타일과 바디 로션 사용 팁을 알아보세요</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_07.png" alt="어떤 타입의 피부를 가지고 계신가요? 알아보기">
+                    <dl>
+                        <dt>바디-어떤 타입의 피부를 가지고 계신가요?</dt>
+                        <dd><a href="detail_goodskin_04.html">더보기</a></dd>
+                        <dd>
+                            <strong>어떤 바디 케어가 필요한지 확인하세요.</strong>
+                            <span>피부를 아름답고 빛나게 만드는 케어 방법도 피부 타입에 따라 달라집니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

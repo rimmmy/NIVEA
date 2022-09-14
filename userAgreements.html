@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <article class="userAgreements">
+        <h2>서비스 이용약관</h2>
+        <ol>
+            <li>
+                <h3>1. 개인정보</h3>
+                <p>개인정보에 관해서는 개인정보처리방침을 확인해 주시기 바랍니다.</p>
+            </li>
+            <li>
+                <h3>2. 콘텐츠</h3>
+                <p>사진, 이미지, 그래픽, 로고, 동영상, 영화, 오디오 파일, 글과 같은 자료(이하, "자료")는 웹사이트 www.nivea.co.kr (이하, "웹사이트")에 사용된 것을 말합니다. 자료는 Beiersdorf AG, Unnastr. 48, 20245 Hamburg(이하, “Beiersdorf”)의 재산이며, 저작권법, 상표법, 디자인법 및 독일법 및 국제법 하의 인권과 관련한 조항의 보호를 받습니다. 어떠한 경우에도 순수한 개인적 용도를 넘어서 자료를 이용하려면 Beiersdorf의 사전 서면 동의가 있어야 합니다. 이것은 어떠한 경우든지 자료를 변경하는 것에도 동일하게 적용되며, 특히 번역 등 어떤 형태로든 자료를 다른 형식으로 처리하는 것이 해당합니다. 또한, 어떠한 경우든지 자료를 전달하는 것에도 동일하게 적용됩니다.</p>
+                <p>웹사이트에서 자료의 다운로드를 명확히 제공하는 경우에는(예: Media Centre), 세부 특별 이용 약관이 적용됩니다.</p>
+            </li>
+            <li>
+                <h3>3. 면책조항</h3>
+                <p>이용자가 자료를 다운로드하거나 어떤 다른 형태로 활용한다면, 이것은 이용자의 단독 책임으로 이루어지는 것입니다. 이와 관련하여 이용자에게 발생하는 모든 손해, 특히 데이터, 하드웨어 또는 소프트웨어와 관련한 손해에 대해 Beiersdorf는 어떤 책임도 지지 않습니다. 의도적인 중대한 과실에 대한 책임은 이 조항의 영향을 받지 않습니다. Beiersdorf는 어떠한 경우에도 제 3자의 권리에 대한 침해에 대해서 아무 책임도 지지 않습니다.</p>
+                <p>이 웹사이트에 있는 정보는 주의를 다 하여 준수되고 관리되고 있습니다. 그러나 Beiersdorf는 정보의 정확성, 최신성, 완결성에 대해서는 어떤 것도 책임지지 않습니다. 이 웹사이트는 일반적인 정보를 제공하는 것을 목적으로 하며, 어떤 형태로도 의학적인 조언이나 전문가의 조언을 대체하지 않습니다.</p>
+            </li>
+            <li>
+                <h3>4. 평가</h3>
+                <p>회원에게는 제품, 업무처리 및 기타 측면에 관하여 웹사이트의 콘텐츠를 평가할 기회가 주어집니다. 이용자가 평가를 하는 것은, Beiersdorf에게 그 평가 결과를 기한의 제한 없이 어디에든지 사용할 수 있는 권한을 부여하는 것을 의미합니다. Beiersdorf는 평가 결과를 제한 없이, 즉, 어떤 형식이나 미디어도 다 가능하며 온라인과 오프라인 모두에 공개하고 배포할 수 있습니다. 추가로 Beiersdorf는 평가 결과를 축약할 권한도 가집니다. 이용자가 평가 시 이름을 제공했다면, Beiersdorf가 평가 결과 공개 시에 이용자의 이름을 명시할 수 있는 권한을 갖지만 이것이 의무는 아닙니다.</p>
+                <p>평가 점수와 의견을 등록하는 것은, 이용자가 의도적으로 부정확한 평가나, 다음과 같은 평가를 하지 않는다는 것을 보증합니다. (a) 독일의 저작권법을 위반하거나 제 3자의 권리를 침해하는 평가, (b) 제정법의 조항이나 공식 판결을 위반하는 평가, (c) 개인이나 회사의 명예를 훼손하거나 모욕, 차별하는 평가, (d) 제 3자로부터 대가나 다른 형태의 보상을 받아서 제공하는 평가, (e) 다른 웹사이트, 주소, 이메일 주소, 연락처나 전화번호와 관련된 정보를 포함하는 평가, 또는 (f) 컴퓨터 바이러스, 웜 또는 컴퓨터 프로그램이나 파일을 훼손할 가능성이 있는 다른 것을 포함하는 평가. Beiersdorf는 불법적인 콘텐츠를 포함한 평가는 어떤 것이든 삭제하거나 웹사이트에 게재하지 않을 수 있는 권한을 가지며, 특히 차별적인 평가, 폭력을 조장하거나 외설이나 인종차별주의적인 내용이 담긴 평가, 또는 연쇄식 행운의 편지, 대량 메일이나 다른 형태의 스팸이 해당합니다.</p>
+            </li>
+            <li>
+                <h3>5. 법적결과</h3>
+                <p>Beiersdorf는 이용자가 이 이용 약관이나 제정법의 조항 중 어느 하나만 위반해도 로그인 범위에 대한 이용자의 접속을 차단할 권리를 가집니다. 이 경우, 이용자에게 로그인 범위에 대한 이용은 더는 허가되지 않으며, 따라서 모든 추가적인 이용은 위법입니다. Beiersdorf는 허가되지 않은 이용과 모든 권리 침해에 대해 고소할 권한을 가지며, 권리 침해란 특히 민법 또는 형법상의 인권, 상표, 디자인, 저작권 및 기타 지적 재산권의 침해를 말합니다.</p>
+                <p>이 이용 약관에 포함된 개별 조항이 무효가 되거나 취소되어도, 이용 약관의 나머지 조항의 유효성에는 영향을 주지 않습니다.</p>
+                <p>기술 혁신이나 법 개정에 따라, 이 이용 약관은 간혹 수정되며, 마지막 수정 시점은 2015년 4월입니다. 어떤 것이든 우리 웹사이트에 대한 권리 침해를 우리에 알리고 싶다면, 바이어스도르프 코리아(유), 서울시 영등포구 국제금융로 10, Two IFC 17층,<a href="tel:+82267420800">Tel: +82 2 6742 0800,</a> Fax: +82 2 6273 8678.</p>
+            </li>
+        </ol>
+    </article>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

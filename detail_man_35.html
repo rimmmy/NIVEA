@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="detailContainer product">
+        <figure>
+            <img src="images/detail_man_35_maine.png" alt=" 사진 입니다.">
+            <figcaption>
+                <ul>
+                    <li>#쉐이빙</li>
+                    <li>#모이스춰라이징</li>
+                </ul>
+                <h2>니베아 맨 프로텍트 앤 케어 애프터 쉐이브 로션</h2>
+                <small>NIVEA MEN protect&care after shave lotion</small>
+                <p>피부 본래의 보호막을 건강하게 가꾸어 줍니다. </p>
+                <div>
+                    <dl>
+                        <dt>상품 용량</dt>
+                        <dd><a href="#" class="active">100ml</a></dd>
+                    </dl>
+                </div>
+                <span>제품 번호 81300 (81300-06210-14)</span>
+                <a href="#product_information">제품 정보</a>
+                <div>
+                    <a href="#shareTips" data-panel="shareTips">공유</a>
+                    <div id="shareTips">
+                        <input type="button" value="close" class="btn_Close">
+                        <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                        <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                        <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+                    </div>
+                </div>
+            </figcaption>
+        </figure>
+        <div>
+            <ul>
+                <li><a href="#product_information">제품정보</a></li>
+                <li><a href="#ingredient">전성분 / 경고</a></li>
+            </ul>
+            <div id="product_information">
+                <h3>효능</h3>
+                <ul>
+                    <li>
+                       <img src="images/detail_man_35_effect04.png" alt="모이스춰라이징">
+                       모이스춰라이징   
+                    </li>
+                    <li>
+                        <img src="images/detail_man_35_effect01.png" alt="수딩">
+                        수딩 
+                     </li> 
+                     <li>
+                        <img src="images/detail_man_35_effect02.png" alt="프로비타민 B5">
+                        프로비타민 B5
+                     </li> 
+                     <li>
+                        <img src="images/detail_man_35_effect03.png" alt="알로에베라">
+                        알로에베라 
+                     </li> 
+                   
+                </ul>
+                <p>
+                    <mark>즉각적인 수분 공급 및 피부 자극 진정, 면도 후의 자극과 불편감 완화 </mark>
+                    <mark>피부 본래의 보호막을 건강하게 케어, 끈적임 없이 빠른 흡수</mark>
+                </p>
+                <article>
+                    <h4>이 제품에 대해 더 알아보기</h4>
+                    <ul>
+                        <li>알로에 베라와 프로 비타민 B5 성분이 즉각적으로 수분을 공급하고 면도로 자극받은 피부를 진정시켜 줍니다. </li>
+                        <li>건조로 인한 피부 당김 및 면도 후의 자극과 불편감을 완화시켜 줍니다. </li>
+                        <li>피부 본래의 보호막을 건강하게 가꾸어 줍니다.</li>
+                        <li>끈적임 없이 빠르게 흡수됩니다.</li>
+                    </ul>
+                </article>
+                <article>
+                    <img src="images/detail_man_35_use.png" alt="">
+                    <div>
+                        <h4>사용 방법</h4>
+                        <ol>
+                            <li>면도나 세안 후, 적당량을 손에 덜어 얼굴과 목에 골고루 바릅니다.</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            <div id="ingredient">
+                <ul>
+                    <li>
+                        특별한 성분
+                        <p>프로비타민 B5, 알로에베라</p>
+                    </li>
+                    <li>
+                        성분 목록 
+                        <p>포함: 정제수, 변성알코올, 글리세린, 디스타치포스페이트, 에칠헥실코코에이트, 향료, 다이메티콘, 트리세테아레스-4포스페이트, 카보머, 판테놀, 소듐하이드록사이드, 알로에베라잎즙가루, 유효 성분 Panthenol</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="checkContainer">
+                <h3>위 범주 내 해당되는 상품 더 알아보기</h3>
+                <ul>
+                    <li>
+                        <img src="images/nivea-product-page5_10.png" alt="니베아 데오드란트 스프레이 프로텍트 앤 케어 제품 알아보기">
+                        <dl>
+                            <dt>데오드란트</dt>
+                            <dd>니베아 데오드란트 스프레이 프로텍트 앤 케어</dd>
+                            <dd><a href="detail_body_20.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-product-page6_02.png" alt="니베아 맨 데오드란트 스틱 프로텍트 앤 케어 제품 알아보기">
+                        <dl>
+                            <dt>데오드란트</dt>
+                            <dd>니베아 맨 데오드란트 스틱 프로텍트 앤 케어</dd>
+                            <dd><a href="detail_body_22.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-product-page7_11.png" alt="니베아 데오드란트 롤온 프로텍트 앤 케어 제품 알아보기">
+                        <dl>
+                            <dt>데오드란트</dt>
+                            <dd>니베아 데오드란트 롤온 프로텍트 앤 케어</dd>
+                            <dd><a href="detail_body_08.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+            </div>
+        </div>
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

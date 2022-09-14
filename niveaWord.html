@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="niveaWord">
+        <h2>브랜드 <mark>&amp;</mark> 컴퍼니</h2>
+        <strong>
+            <mark>니베아</mark>에 오신 것을 환영합니다!
+        </strong>
+        <p>130년 이상의 경험을 보유한 스킨케어 분야의 선도 기업 중 하나로서, 니베아의 제품은 우리에게 깊은 신뢰를 보여주는 소비자의 요구를 항상 만족시킵니다. 우리에 대해 여기서 더 알아보세요.</p>
+        <ul>
+            <li>
+                <a href="history.html">
+                    <span>니베아 크림의 역사 보러 가기</span>
+                    <img src="images/niveaWord_01.gif" alt="니베아 공에 기댄 소녀 사진">
+                </a>
+                <dl>
+                    <dt>역사가 있는 크림</dt>
+                    <dd>거의 모든 가정에서 니베아 제품을 발견할 수 있습니다. 브랜드에 관한 흥미로운 사실과 니베아라는 이름이 어떻게 붙었는지를 여기서 확인할 수 있습니다.</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="beiersdorf.html">
+                    <span>바이어스도르프 커리어 정보 더 알아보기</span>
+                    <img src="images/niveaWord_02.gif" alt="바이어스도르프 본사 외경 사진">
+                </a>
+                <dl>
+                    <dt>바이어스도르프 커리어</dt>
+                    <dd>우리의 목표를 당신의 미래로 만드세요. 재능과 열정, 기업가정신이 있다면, 당신의 사명을 바이어스도르프에서 찾게 될 것입니다!</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="environment.html">
+                    <span>지속가능성에 관해 더 알아보기</span>
+                    <img src="images/niveaWord_03.png" alt="환경보호 관련 사진">
+                </a>
+                <dl>
+                    <dt>니베아의 지속가능성</dt>
+                    <dd>신뢰와 품질 - 우리가 가장 중요시하는 두 가지 가치입니다. 그러므로 지속가능성은 니베아에게 있어 아주 중요한 역할을 합니다.</dd>
+                </dl>
+            </li>
+        </ul>
+
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href="environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

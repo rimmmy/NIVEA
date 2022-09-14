@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="detailTipsContainer  Gs02">
+        <div class="tipsbackground">
+            <h2>십대를 위한 스킨 케어</h2>
+            <div>
+                <a href="#shareTips" data-panel="shareTips">useful information</a>
+                <div id="shareTips">
+                    <input type="button" value="close" class="btn_Close">
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                    <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+                </div>
+            </div>
+            <div>
+                <img src="images/detail_gs_02_maine.png" alt="십대를 위한 스킨 케어 이미지">
+                <dl>
+                    <dt><mark>십 대의 어린 피부</mark>에<br>
+                        맞는 케어 방법</dt>
+                    <dd>스킨 트러블과 작별하기 우리 몸은 청소년기를 겪으며 변화합니다. 그리고 종종 스킨케어에 어려움을 느끼게 됩니다. 이 시기에는 바디케어와 스킨케어가 특히 중요합니다. 여러 피부 관리 팁을 참고해 보세요.</dd>
+                </dl>
+            </div>
+            <article class="group2Content">
+                <img src="images/detail_gs_02_01.png" alt="내용관련 사진">
+                <div>
+                    <h3>깨끗한 피부를 만드는 5가지 팁</h3>
+                    <ul>
+                        <li>- 아침저녁 규칙적으로 얼굴을 씻으세요. 유분층은 페이셜 티슈로 닦으면 닦아내기 쉽습니다. 이는 피부에 자극을 주지 않으면서 효과적인 세안 방법입니다.</li>
+                        <li>- 얼굴을 씻을 때 뜨거운 물을 사용하지 마세요. 피지선을 자극해 유분이 더 많이 나오게 되기 때문입니다.</li>
+                        <li>- 손을 얼굴에서 멀리하세요. 그렇지 않으면 피부가 계속 자극을 받게 됩니다.</li>
+                        <li>- 신선한 공기를 마시며 각종 스포츠를 즐기거나 운동을 많이 하세요.</li>
+                    </ul>
+                    <h3>피부 트러블과의 작별</h3>
+                    <p>
+                        아무리 트러블이 난 부위를 만지고 싶어도 실행에 옮기면 안 됩니다. 누르는 힘이 피부 안쪽의 염증을 유발할 수 있습니다. 하지만 방법이 전혀 없다면, 손을 직접 사용하지 말고 피부를 손수건으로 덮고 손끝으로 아주 부드럽게 누르세요. 그리고 소독을 해야 염증이 생길 가능성이 줄어듭니다.
+                        피부 관리실을 주기적으로 다니면 더욱 좋습니다. 피부를 전문적으로 깨끗하게 관리받을 수 있기에 효과적인 관리에 도움이 될 것입니다.
+                    </p>
+                </div>
+            </article>
+            <div class="twowaySlider">
+                <h3>피부 타입 4가지 알아보기</h3>
+                <ul class="tipSlider 2way">
+                    <li>
+                        <img src="images/detail_gs_02_02.png" alt="복합성 피부 사진">
+                        <dl>
+                            <dt>피부 타입 1: 복합성 피부</dt>
+                            <dd>얼굴에 기름진 부분과 보통인 부분이 함께 나타납니다. 유분기가 주로 T존에서 나타납니다. T존이란 이마, 눈썹, 코, 턱 부위의 T자 모양 부위를 말합니다. 뺨은 건조하고 가끔 땅깁니다. 이런 피부에는 햇빛으로부터 피부를 보호하는 BB크림이 적합합니다.<br> 케어 팁: 피부의 수분이 부족해지기 쉬우므로, 고보습 데이 크림을 사용하세요.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/detail_gs_02_03.png" alt="지성 피부 사진">
+                        <dl>
+                            <dt>피부 타입 2: 지성 피부</dt>
+                            <dd>얼굴이 나쁘고 번들거리며 모공이 크다면, 지성 피부입니다. 뾰루지와 블랙헤드가 이마, 코, 턱, 쇄골 라인과 등에까지 퍼져 있습니다. 피지가 지나치게 많이 나와서 잡티가 생깁니다. 사춘기의 호르몬 변화가 이러한 문제의 원인입니다.<br>  케어 팁: 뾰루지를 짜지 마세요 - 염증을 유발하고 흉터를 남길 수 있습니다.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/detail_gs_02_04.png" alt="민감성 피부 사진">
+                        <dl>
+                            <dt>피부 타입 3: 민감성 피부</dt>
+                            <dd>얼굴이 번들거리며 모공이 크다면, 지성 피부일 확률이 높습니다. 사춘기의 호르몬 변화가 이러한 문제의 원인입니다.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/detail_gs_02_05.png" alt="중성 피부 사진">
+                        <dl>
+                            <dt>피부 타입 4: 중성 피부</dt>
+                            <dd>피부가 부드럽고 모공이 매우 작지만, 피부가 연약해서 환경적인 영향과 스트레스에 특히 민감합니다.<br>
+                                케어 팁: 민감성 피부에는 수분이 항상 충분하게 공급되어야 합니다. 이런 피부는 피지선이 약하게 기능하기 때문에 피부에 유분과 수분이 모두 부족합니다. 이런 피부에는 첨가물이 되도록 없는 제품을 사용해야 합니다.</dd>
+                        </dl>
+                    </li>
+                   </ul>
+            </div>
+            <div class="twowaySlider">
+                <h3>십대를 위한 뷰티 기초</h3>
+                <ul class="tipSlider 2way">
+                    <li>
+                        <img src="images/detail_gs_02_06.png" alt="세수하는 사진">
+                        <dl>
+                            <dt>1단계: 얼굴을 깨끗하게 씻으세요</dt>
+                            <dd>매일 세수할 때 안티블레미쉬 스크럽이나 항균 기능의 세정 젤을 사용하세요. 깨끗한 세안에 도움을 줍니다.
+                                케어 팁: 저녁에 화장을 완벽히 지우는 것이 정말 중요합니다. 인샤워 메이크업 리무버 등을 사용해 실천해 보세요.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/detail_gs_02_07.png" alt="토너로 닦는 모습">
+                        <dl>
+                            <dt>2단계: 페이셜 토너로 피부 닦아내기</dt>
+                            <dd>클렌징 후에 피부를 관리하고 잔여물을 닦아내기에는 페이셜 토너가 가장 좋습니다. 얼굴 전체에 사용해도 되고, 부분적으로 사용해도 됩니다.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/detail_gs_02_08.png" alt="크림바르는 사진">
+                        <dl>
+                            <dt>3단계: 피부 케어</dt>
+                            <dd>피부 타입에 맞는 케어 방법을 선택하세요. 어린 피부에 필요한 크림은 보습 크림입니다. 이러한 얼굴 케어는 외부에서 오는 자극을 차단하고, 얼굴을 빛나고 산뜻하게 만들어 줍니다.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/detail_gs_02_09.png" alt="스크럽제로 세안하는 모습의 사진">
+                        <dl>
+                            <dt>4단계: 피부 집중 케어</dt>
+                            <dd>주 1회: 젠틀한 스크럽제로 세안하여 번들거림을 줄이고, 각질을 제거합니다. 영양이 풍부한 마스크는 자극받은 피부를 진정시키고 수분을 공급합니다. 클리어업 스트립이 T존을 깨끗하게 유지해 줍니다. 같은 역할을 할 것입니다.</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="subtitle">
+                <h3>하나, 둘, 셋, 출발: 하루의 시작을 상쾌하게!</h3>
+                <p>
+                    종일 친구들과 놀러 다니나요? 항상 좋은 모습을 유지하기 위해서는 몸에도 조금은 신경을 써야 합니다.<br> 간단한 케어 습관으로 편안하고 건강하게 보일 수 있습니다.
+                </p>
+            </div>
+            <article class="photoRight">
+                <div>
+                    <h4>땀 관리</h4>
+                    <p>
+                        사춘기에는 땀샘이 발달하고 호르몬의 변화로 땀을 더 많이 흘립니다.
+                        매일매일 땀을 씻어내세요. 자는 동안에도 땀을 흘리므로 아침에 간단하게 샤워하는 것이 가장 좋습니다. 이는 효과적인 관리에 도움을 줄 수 있습니다. 샤워 후에는 자신에게 가장 잘 맞는 데오드란트를 사용해 보는 것도 좋습니다.
+                    </p>
+                    <h4>피부와 헤어를 위한 3분 프로그램</h4>
+                    <p>
+                        아무리 시간이 없고 다른 것으로 바빠도, 몸은 꼭 관리해야 합니다. 피부가 생기 넘치게 보이려면 매일 밤 가벼운 보습 바디 로션을 발라야 합니다. 너무 힘든 일인가요? 그럼 니베아의 인샤워 바디 로션을 사용해 샤워 중에 발라 보세요. 머리를 감을 때도 샴푸와 컨디셔너를 한 번에 할 수 있는 제품을 사용하면 샤워 시간을 조금이라도 줄일 수 있습니다. 감은 후 머리 모양을 다듬기도 아주 쉬울 거예요.
+                    </p>
+                </div>
+                <img src="images/detail_gs_02_10.png" alt="내용관련 사진">
+            </article>
+        </div>
+        <div class="interestingContainer">
+            <h3>흥미로운 팁 모음</h3>
+            <ul class="tips carouselSlider">
+                <li>
+                    <img src="images/nivea-tips-page_01.png" alt="피부 트러블 케어의 효과 지성 피부를 위한 팁 알아보기">
+                    <dl>
+                        <dt>페이스-피부 트러블 케어의 효과 지성 피부를 위한 팁</dt>
+                        <dd><a href="detail_goodskin_06.html">더보기</a></dd>
+                        <dd>
+                            <strong> 지성 피부에 대해 꼭 알아야 하는 것</strong>
+                            <span>지성 피부를 위한 팁 번들거리는 피부 상태는 종종 피부 트러블로 이어지기도 합니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_05.png" alt="허벅지 셀룰라이트 간단한 팁과 조언 알아보기">
+                    <dl>
+                        <dt>바디-허벅지 셀룰라이트: 간단한 팁과 조언</dt>
+                        <dd><a href="detail_goodskin_08.html">더보기</a></dd>
+                        <dd>
+                            <strong> 허벅지에 생기는 셀룰라이트를 어떻게 없앨 수 있을까.</strong>
+                            <span>안타깝게도 특별한 치료법이 없습니다. 하지만 피부에 덜 나타나게 함으로써 기분이 나아질 방법은 있습니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_03.png" alt="피부를 실크처럼 매끈하게, 제모에 관한 간단한 팁 알아보기">
+                    <dl>
+                        <dt>바디-피부를 실크처럼 매끈하게: 제모에 관한 간단한 팁</dt>
+                        <dd><a href="detail_goodskin_07.html">더보기</a></dd>
+                        <dd>
+                            <strong>부드럽게 제모하는 요령과 가장 효과적인 방법.</strong>
+                            <span>부드럽게 제모하는 요령과 가장 효과적인 방법 어떤 제모 방법이 잘 맞으시나요?</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_04.png" alt="터치가 가진 힘을 알아보세요 알아보기">
+                    <dl>
+                        <dt>터치가 가진 힘을 알아보세요</dt>
+                        <dd><a href="detail_lifestyle_09.html">더보기</a></dd>
+                        <dd>
+                            <strong> 피부끼리 닿으면 우리의 몸과 마음이 살아납니다.</strong>
+                            <span>촉각의 원리와 촉각에 대한 많은 것을 파악할 수 있습니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+                
+                <li>
+                    <img src="images/nivea-tips-page_06.png" alt="Q10 제품의 효과 알아보기">
+                    <dl>
+                        <dt>바디-Q10 제품의 효과</dt>
+                        <dd><a href="detail_lifestyle_10.html">더보기</a></dd>
+                        <dd>
+                            <strong>Q10 라인 제품으로 복합적인 피부 케어에 도움을 줄 수 있습니다.</strong>
+                            <span>피부를 부드럽게 만드는 라이프 스타일과 바디 로션 사용 팁을 알아보세요</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/nivea-tips-page_07.png" alt="어떤 타입의 피부를 가지고 계신가요? 알아보기">
+                    <dl>
+                        <dt>바디-어떤 타입의 피부를 가지고 계신가요?</dt>
+                        <dd><a href="detail_goodskin_04.html">더보기</a></dd>
+                        <dd>
+                            <strong>어떤 바디 케어가 필요한지 확인하세요.</strong>
+                            <span>피부를 아름답고 빛나게 만드는 케어 방법도 피부 타입에 따라 달라집니다.</span>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>       
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

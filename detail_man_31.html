@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="detailContainer product">
+        <figure>
+            <img src="images/detail_man_31_maine.png" alt="니베아 맨 쿨킥 쉐이빙 젤 사진 입니다.">
+            <figcaption>
+                <ul>
+                    <li>#쉐이빙</li>
+                    <li>#민감한 피부</li>
+                </ul>
+                <h2>니베아 맨 쿨킥 쉐이빙 젤</h2>
+                <small>NIVEA MEN cool kick shaving gel</small>
+                <p>남성들이 선호하는 시원한 사용감과 향으로 면도하는 동안 색다른 즐거움을 느낄 수 있습니다.</p>
+                <div>
+                    <dl>
+                        <dt>상품 용량</dt>
+                        <dd><a href="#" class="active">200ml</a></dd>
+                    </dl>
+                </div>
+                <span>제품 번호 81730 (81730-06210-02)</span>
+                <a href="#product_information">제품 정보</a>
+                <div>
+                    <a href="#shareTips" data-panel="shareTips">공유</a>
+                    <div id="shareTips">
+                        <input type="button" value="close" class="btn_Close">
+                        <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                        <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                        위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.
+                    </div>
+                </div>
+            </figcaption>
+        </figure>
+        <div>
+            <ul>
+                <li><a href="#product_information">제품정보</a></li>
+                <li><a href="#ingredient">전성분 / 경고</a></li>
+            </ul>
+            <div id="product_information">
+                <h3>효능</h3>
+                <ul>
+                    <li>
+                        <img src="images/detail_man_31_effect01.png" alt="케어링">
+                        케어링 
+                    </li>
+                    <li>
+                        <img src="images/detail_man_31_effect02.png" alt="리프레싱">
+                        리프레싱  
+                    </li>
+                    <li>
+                        <img src="images/detail_man_31_effect03.png" alt="모든 피부 타입">
+                        모든 피부 타입 
+                    </li>
+                    <li>
+                        <img src="images/detail_man_31_effect04.png" alt="보통피부">
+                        보통피부  
+                    </li>
+                   
+                </ul>
+                <article>
+                    <h4>이 제품에 대해 더 알아보기</h4>
+                    <ul>
+                        <li>멘톨-비타민 함유의 쿨링 쉐이빙 처방으로 피부에 시원한 청량감과 상쾌한 에너지를 제공하고 피부자극이 적은 효과적인 면도를 가능하게 합니다. </li>
+                        <li>피부에 가볍게 잘 발리고 손으로 가볍게 문지르면 풍부한 거품으로 변하는 혁신적인 아쿠아 쿨 불루젤 타입으로 감각적인 면도와 많은 양의 젤이 농축되어 있어 오랫동안 사용하실 수가 있습니다. </li>
+                        <li>새롭게 개발된 어드벤스트 울트라 글라이드 테크놀로지를 통해 최적의 밀착면도가 가능하여 깔끔하고 활력 있는 피부상태로 유지해 주며, 남성들이 선호하는 시원한 사용감과 향으로 면도하는 동안 색다른 즐거움을 느낄 수 있습니다.
+                        </li>
+                    </ul>
+                </article>
+            </div>
+            <div id="ingredient">
+                <ul>
+                    <li>
+                        특별한 성분
+                        <p></p>
+                    </li>
+                    <li>
+                        성분 목록 
+                        <p>포함: 정제수 팔미틱애씨드 트라이에탄올아민 올레스-20 아이소펜탄 글리세린 향료 아이소부탄 아이소프로필팔미테이트 폴리아이소부텐 하이드록시에틸셀룰로오스 피이지-90글리세릴아이소스테아레이트 하이드록시프로필메틸셀룰로오스 피이지-14M 멘톨 피록톤올아민 라우레스-2 비에이치티 리날룰 코튼씨오일 토코페릴아세테이트 마그네슘클로라이드 녹색3호</p>
+                    </li>
+                    <li>
+                        경고
+                        <p>고압가스를 사용한 가연성 제품으로서 위험하므로 다음의 주의를 지킬 것 1.불꽃을 향하여 사용하지 말 것 2.난로,풍로등 화기부근에서 사용하지 말 것 3.화기를 사용하고 있는 실내에서 사용하지 말 것 4.온도가 40˚C 이상의 장소에 보관하지 말 것 5.밀폐된 실내에서 사용 한 후 에는 반드시 환기를 실시 할 것 6.불 속에 버리지 말 것7.사용 후 남은 가스가 없도록 하여 버릴 것 8.밀폐된 장소에 보관 하지 말 것 9. 특정 부위에 계속해서 장기간 사용하지 말 것</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="checkContainer">
+                <h3>위 범주 내 해당되는 상품 더 알아보기</h3>
+                <ul>
+                    <li>
+                        <img src="images/nivea-product-page6_09.png" alt="니베아 맨 쿨킥 쉐이빙 폼 제품 알아보기">
+                        <dl>
+                            <dt>쉐이빙</dt>
+                            <dd>니베아 맨 쿨킥 쉐이빙 폼</dd>
+                            <dd><a href="detail_man_32.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-product-page6_10.png" alt="니베아 맨 데오드란트 스틱 쿨킥 제품 알아보기">
+                        <dl>
+                            <dt>데오드란트</dt>
+                            <dd>니베아 맨 데오드란트 스틱 쿨킥</dd>
+                            <dd><a href="detail_man_07.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-product-page3_04.png" alt="니베아 맨 쿨킥 애프터 쉐이브 스킨 제품 알아보기">
+                        <dl>
+                            <dt>쉐이빙</dt>
+                            <dd>니베아 맨 쿨킥 애프터 쉐이브 스킨</dd>
+                            <dd><a href="detail_man_33.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+            </div>
+        </div>
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

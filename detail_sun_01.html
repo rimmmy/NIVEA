@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="detailContainer product">
+        <figure>
+            <img src="images/detail_sun_01_maine.png" alt=" 사진 입니다.">
+            <figcaption>
+                <ul>
+                    <li>#선케어</li>
+                    <li>#복합피부</li>
+                </ul>
+                <h2>니베아 선 페이스 수딩 센서티브 크림</h2>
+                <small>Nivea Sun Face Soothing Sensitive Cream</small>
+                <p>매우 효과적이고 즉각적인 UVA/UVB 보호–일광화상 및 조기 피부 노화 방지</p>
+                <div>
+                    <dl>
+                        <dt>상품 용량</dt>
+                        <dd><a href="#" class="active">50ml</a></dd>
+                    </dl>
+                </div>
+                <span>제품 번호 80460 (80460-01000-19)</span>
+                <a href="#product_information">제품 정보</a>
+                <div>
+                    <a href="#shareTips" data-panel="shareTips">공유</a>
+                    <div id="shareTips">
+                        <input type="button" value="close" class="btn_Close">
+                        <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                        <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                        <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+                    </div>
+                </div>
+            </figcaption>
+        </figure>
+        <div>
+            <ul>
+                <li><a href="#product_information">제품정보</a></li>
+                <li><a href="#ingredient">전성분 / 경고</a></li>
+            </ul>
+            <div id="product_information">
+                <h3>효능</h3>
+                <ul>
+                    <li>
+                        <img src="images/detail_sun_01_effect01.png" alt="선 프로텍션">
+                        선 프로텍션  
+                    </li>
+                    <li>
+                        <img src="images/detail_sun_01_effect02.png" alt="기름기 방지">
+                        기름기 방지 
+                    </li>
+                    <li>
+                        <img src="images/detail_sun_01_effect03.png" alt="수딩">
+                        수딩 
+                    </li>
+                    <li>
+                        <img src="images/detail_sun_01_effect04.png" alt="50+">
+                        50+ 
+                    </li>
+                    <li>
+                        <img src="images/detail_sun_01_effect05.png" alt="UVA/UVB 필터">
+                        UVA/UVB 필터 
+                    </li>
+                    <li>
+                        <img src="images/detail_sun_01_effect06.png" alt="감초뿌리">
+                        감초뿌리 
+                    </li>
+                    <li>
+                        <img src="images/detail_sun_01_effect07.png" alt="Q10">
+                        Q10 
+                    </li>
+                    <li>
+                        <img src="images/detail_sun_01_effect08.png" alt="지성피부">
+                        지성피부  
+                    </li>
+                    <li>
+                        <img src="images/detail_sun_01_effect09.png" alt="복합피부">
+                        복합피부  
+                    </li>
+                    <li>
+                        <img src="images/detail_sun_01_effect10.png" alt="민감한 피부">
+                        민감한 피부  
+                    </li>
+                   
+                </ul>
+                <p>
+                    <mark>민감한 피부를 위해 개발된 수분 포뮬러 자극을 진정시키고 피부의 당기는 느낌을 즉시 감소시킵니다.</mark>
+                    <mark>매우 효과적이고 즉각적인 UVA/UVB 보호–일광화상 및 조기 피부 노화 방지</mark>
+                    <mark>무향, 가벼운 피부 느낌, 유분기 없음</mark>
+                </p>
+                <article>
+                    <h4>이 제품에 대해 더 알아보기</h4>
+                    <ul>
+                        <li>천연 유래 항산화제는 태양 손상으로부터 피부를 보호하기 위해 얼굴 피부를 지원합니다.</li>
+                        <li>눈에 좋은 포뮬라–안과적으로 입증됨 , 피부과 피부 친화성 입증</li>
+                        <li>0% 끈적임, 41명 여성 대상 자가평가 테스트결과 (Dermostica Institute, Poland) ** 자사에서 의도적으로 배합하지 않았음을 의미합니다. ***파라벤 무첨가: 메칠파라벤, 에칠파라벤, 부틸파라벤, 이소부틸파라벤, 프로필파라벤, 이소프로필파라벤, p-하이드록시벤조익애씨드 7종에 한함/ 자사에서 의도적으로 배합하지 않음</li>
+                        <li>오래도록 지속되는 강력한 UVA / UVB 필터</li>
+                    </ul>
+                </article>
+                <article>
+                    <img src="images/detail_sun_01_use.png" alt="">
+                    <div>
+                        <h4>사용 방법</h4>
+                        <ol>
+                            <li>피부 표면에 적당량을 부드럽게 문지른다</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            <div id="ingredient">
+                <ul>
+                    <li>
+                        특별한 성분
+                        <p>UVA/UVB 필터, 감초추출물, Q10</p>
+                    </li>
+                    <li>
+                        성분 목록 
+                        <p>포함: 정제수, 호모살레이트, 변성알코올, 부틸메톡시디벤조일메탄, 에칠헥실살리실레이트, 부틸렌글라이콜다이카프릴레이트/다이카프레이트, 에칠헥실트리아존, 비스-에칠헥실옥시페놀메톡시페닐트리아진, 사이클로메티콘, 페닐벤즈이미다졸설포닉애씨드, 실리카, 타피오카전분, 베헤닐알코올, 세테아릴알코올, 글리세린, 메틸프로판다이올, 다이메티콘, 소듐하이드록사이드, 소듐스테아로일글루타메이트, 카프릴릴글라이콜, 에틸헥실글리세린, 트라이소듐이디티에이, 아크릴레이트/C10-30알킬아크릴레이트크로스폴리머, 카보머, 토코페릴아세테이트, 잔탄검, 창과감초뿌리추출물, 소듐클로라이드 미포함: 향료</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="checkContainer">
+                <h3>위 범주 내 해당되는 상품 더 알아보기</h3>
+                <ul>
+                    <li>
+                        <img src="images/nivea-product-page_sun_01.png" alt="니베아 선 프로텍트 앤 라이트 필 퍼펙트 선 세럼 제품 알아보기">
+                        <dl>
+                            <dt>선케어</dt>
+                            <dd>니베아 선 프로텍트 앤 라이트 필 퍼펙트 선 세럼</dd>
+                            <dd><a href="detail_sun_04.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-product-page_sun_07.png" alt="프로텍션 롤온 SPF50+ PA++++ 제품 알아보기">
+                        <dl>
+                            <dt>선케어</dt>
+                            <dd>프로텍션 롤온 SPF50+ PA++++</dd>
+                            <dd><a href="detail_sun_06.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-product-page_sun_05.png" alt="니베아 선 페이스 영 에이지 크림 제품 알아보기">
+                        <dl>
+                            <dt>선케어</dt>
+                            <dd>니베아 선 페이스 영 에이지 크림</dd>
+                            <dd><a href="detail_sun_02.html">더보기</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="interestingContainer">
+                <h3>흥미로운 팁 모음</h3>
+                <ul class="tips carouselSlider">
+                    <li>
+                        <img src="images/nivea-tips-page_01.png" alt="피부 트러블 케어의 효과 지성 피부를 위한 팁 알아보기">
+                        <dl>
+                            <dt>페이스-피부 트러블 케어의 효과 지성 피부를 위한 팁</dt>
+                            <dd><a href="detail_goodskin_06.html">더보기</a></dd>
+                            <dd>
+                                <strong> 지성 피부에 대해 꼭 알아야 하는 것</strong>
+                                <span>지성 피부를 위한 팁 번들거리는 피부 상태는 종종 피부 트러블로 이어지기도 합니다.</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-tips-page_05.png" alt="허벅지 셀룰라이트 간단한 팁과 조언 알아보기">
+                        <dl>
+                            <dt>바디-허벅지 셀룰라이트: 간단한 팁과 조언</dt>
+                            <dd><a href="detail_goodskin_08.html">더보기</a></dd>
+                            <dd>
+                                <strong> 허벅지에 생기는 셀룰라이트를 어떻게 없앨 수 있을까.</strong>
+                                <span>안타깝게도 특별한 치료법이 없습니다. 하지만 피부에 덜 나타나게 함으로써 기분이 나아질 방법은 있습니다.</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-tips-page_03.png" alt="피부를 실크처럼 매끈하게, 제모에 관한 간단한 팁 알아보기">
+                        <dl>
+                            <dt>바디-피부를 실크처럼 매끈하게: 제모에 관한 간단한 팁</dt>
+                            <dd><a href="detail_goodskin_07.html">더보기</a></dd>
+                            <dd>
+                                <strong>부드럽게 제모하는 요령과 가장 효과적인 방법.</strong>
+                                <span>부드럽게 제모하는 요령과 가장 효과적인 방법 어떤 제모 방법이 잘 맞으시나요?</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-tips-page_04.png" alt="터치가 가진 힘을 알아보세요 알아보기">
+                        <dl>
+                            <dt>터치가 가진 힘을 알아보세요</dt>
+                            <dd><a href="detail_lifestyle_09.html">더보기</a></dd>
+                            <dd>
+                                <strong> 피부끼리 닿으면 우리의 몸과 마음이 살아납니다.</strong>
+                                <span>촉각의 원리와 촉각에 대한 많은 것을 파악할 수 있습니다.</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    
+                    <li>
+                        <img src="images/nivea-tips-page_06.png" alt="Q10 제품의 효과 알아보기">
+                        <dl>
+                            <dt>바디-Q10 제품의 효과</dt>
+                            <dd><a href="detail_lifestyle_10.html">더보기</a></dd>
+                            <dd>
+                                <strong>Q10 라인 제품으로 복합적인 피부 케어에 도움을 줄 수 있습니다.</strong>
+                                <span>피부를 부드럽게 만드는 라이프 스타일과 바디 로션 사용 팁을 알아보세요</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/nivea-tips-page_07.png" alt="어떤 타입의 피부를 가지고 계신가요? 알아보기">
+                        <dl>
+                            <dt>바디-어떤 타입의 피부를 가지고 계신가요?</dt>
+                            <dd><a href="detail_goodskin_04.html">더보기</a></dd>
+                            <dd>
+                                <strong>어떤 바디 케어가 필요한지 확인하세요.</strong>
+                                <span>피부를 아름답고 빛나게 만드는 케어 방법도 피부 타입에 따라 달라집니다.</span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/niveakorea/">instagram</a>
+                <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                <span>위 아이콘을 클릭하면 개인 정보 보호 정책을 읽고 동의한 것으로 간주됩니다.</span>
+            </div>
+        </div>
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

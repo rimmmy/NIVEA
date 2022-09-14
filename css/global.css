@@ -1,0 +1,678 @@
+body{
+    font-family: 'brandon-grotesque',"Arita";    
+}
+@media screen  and (max-width: 767px){
+    #searchPanel{
+        position: fixed; top: 120px; width: 100%; 
+        padding: 35px 3%; z-index: 1; background-color: white;
+        display: none; box-sizing: border-box;
+    }
+    #searchPanel.active{
+        display: block; 
+    }
+    #searchPanel form > *{
+        width: 50%; margin: 0 auto;
+    }
+    #searchPanel form fieldset{
+        margin-bottom: 35px; padding: 0 5px;
+    }
+    #searchPanel form fieldset input[type='search']{
+         line-height:45px; width: 66%; border-style: none none solid; background: url("../images/search_FILL0.svg") left/25px no-repeat;
+         padding-left: 10%;  
+         /* width: %; */
+    }
+    #searchPanel form fieldset input::placeholder{
+        color: #c1c1c1; font-size: 12px; font-weight: 300;
+    }
+
+    #searchPanel form fieldset input[type='submit']{
+        width: 31.2%; line-height: 45px; font-size: 14px; color: #fff; background-color: #282879; 
+        margin-left: 0.7%; cursor: pointer;
+    }
+    #searchPanel div mark{
+        font-size: 15px; font-weight: 300; background-color: transparent; font-style: normal;
+    }
+    #searchPanel div ul{
+        display: block; 
+    }
+    #searchPanel div ul li{
+        display: inline-block; border: 1px solid #c1c1c1; font-weight: 300; font-size: 14px; color: #c1c1c1;
+        padding:  10px 5px;  box-sizing: border-box;
+    }
+    #searchPanel div ul li{
+        margin: 15px 0.5% 0 1%;
+    }
+    header{
+        border-bottom: 1px solid navy; padding: 0 3%; box-sizing: border-box;
+        position: fixed; z-index: 1; background-color: white; width: 100%;
+    }
+    header > div::after{
+        content: ""; display: block; clear: both;
+    }
+    header > div h1{
+        float: left; width: 70%; padding: 40px 2%; box-sizing: border-box;
+    }
+    header > div h1 a{
+        display: block;  max-width: 180px; line-height: 50px; display: block;
+    }
+    header > div h1 a img{
+      width: 100%; 
+    }
+    header > div nav label.mui{
+        padding: 5px 3px; border: 1px solid #282879; width: 22px; display: block; margin: 40px auto;
+        position: absolute; right: 3%; z-index: 10;
+    }
+    header > div nav label.mui span{
+        border-top: 2px solid #282879; display: block;
+    }
+    header > div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
+    }
+    header > div nav ul,
+    header > div input[type='button']{
+        display: none;
+    }
+    header > div nav label.mui.active+ul{
+        display: block; position: fixed; top: 148px; z-index: 100;
+        background-color: white; width: 100%; height: 100%; padding: 25px 3%; left: 0;
+    }
+    header > div nav label.mui.active+ul > li{
+        line-height: 50px; padding-right: 50%; box-sizing: border-box;
+        font-weight: 600; font-size: 14px;
+    }
+    header > div nav label.mui.active+ul > li ol{
+        display: none; position: absolute; right: 3%; top: 25px; width: 47%;
+    }
+    header > div nav label.mui.active+ul > li ol.active{
+        display: block;
+    }
+    header > div nav label.mui.active+ul > li ol.active li{
+        list-style: none;
+    }
+    header > div nav label.mui.active+ul > li ol.active li a{
+        text-decoration: none; font-weight: 700; font-size: 14px; color: #000;
+    }
+    header > div nav label.mui.active+ul > li ol.active li:hover a{
+        color: #282879;  border-bottom: 2px solid #282879;
+    }
+    
+    /* header > div nav{
+        text-align: center; width: 15%;
+    }
+    header > div nav label.mui{
+        padding: 5px 3px; border: 1px solid #282879; width: 22px; display: block; margin: 40px auto;
+    }
+    header > div nav label.mui span{
+        border-top: 2px solid #282879; display: block;
+    }
+    header > div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
+    }
+    header > div nav input[type='checkbox'].mui{
+        display: none;
+    }
+    header > div nav input[type='checkbox']#mnav:checked + ul{
+        height: 500px;
+    }
+    header > div nav ul{
+        height: 0; overflow: hidden; transition: height 1s ease-in-out; 
+    }
+    header > div nav ul > li{
+        display: block; font-weight: 600; font-size: 12px; line-height: 120px;
+    }
+    /* header > div nav ul > li:not(:first-child){
+        margin-left: 5.2%;
+    }
+    header > div nav ul > li:hover{
+        text-decoration: underline;;
+    }
+    header > div nav ul > li ol{
+        display: none; width: 100%; position: absolute; left: 0; top: 121px;
+        text-align: center; line-height: 80px; background-color: rgba(255,255,255,0.8);
+    }
+    header > div nav ul > li ol li{
+        display: block; font-weight: 700; 
+    }
+    header > div nav ul > li ol li a{
+        color: #000; text-decoration: none;
+    }
+    header > div nav ul > li ol li:hover a{
+        color: #282879; border-bottom: 2px solid #282879;
+    }
+    header > div nav ul > li ol li:not(:first-child){
+        margin-left: 8.8%;
+    }
+    
+    header > div nav ul > li ol.active{
+        display: block;
+    } */
+    header > div input[type='button']{
+        text-indent: -9999px; width: 15%; border: none; float: left; padding: 40px 2%;  box-sizing: border-box;
+        background-position: center; background-size: 30px; background-repeat: no-repeat; background-color: transparent;
+        background-image: url('../images/search_FILL0.svg'); display: none;
+    }
+    header > div input[type='button'].active{
+        background-image: url('../images/close_blue_FILL0.svg');
+    }
+    footer > div:first-child{
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: #c1c1c1;
+        margin-bottom: 35px;
+        padding: 0 3%;
+        box-sizing: border-box;
+    }
+    footer > div:first-child div{
+       /* max-width: 1180px; margin: 0 auto;*/ line-height: 44px;
+        position: relative;
+    }
+    footer > div:first-child div ul{
+        width: 65%;
+    }
+    footer > div:first-child div ul li{
+        display: inline-block;
+    }
+    footer > div:first-child div ul li:not(:first-child){
+        margin-left: 3%;
+    }
+    footer > div:first-child div ul li a{
+        display: block; font-size: 12px; font-weight: 300;color:#000; text-decoration: none;
+    }
+    footer > div:first-child div span{
+        position: absolute; top: 0; right: 0; width: 30%; text-align: right;
+    }
+    footer > div:first-child div span a{
+        width: 25px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat;
+        display: inline-block; text-align: left;
+    }
+    footer > div:first-child div span a:nth-child(1){
+        background-image: url("../images/instagram_icon_138461.svg");
+    }
+    footer > div:first-child div span a:nth-child(2){
+        background-image: url("../images/facebook_icon_137647.svg");
+    }
+    footer > div:last-child{
+       /* max-width: 1180px;*/ /*margin: 0 auto;*/ padding: 0 3%;
+        box-sizing: border-box;
+    }
+    footer > div:last-child > *{
+        display: block;
+    }
+    footer > div:last-child a{
+        font-size: 12px; font-weight: 300; color: #000; text-decoration: none; margin-bottom: 20px;
+    }
+    footer > div:last-child h2{
+        background: url("../images/footerlogo.png") center / contain no-repeat; text-indent: -9999px;
+        width: 126px; line-height: 23px; margin-bottom: 10px;
+     }
+     
+    footer > div:last-child p{
+        font-weight: 700;  font-size: 14px;
+    }
+    
+    /* bxSliderCustom */
+    .bx-wrapper{
+        border: none; box-shadow: none; 
+    }
+    .listTipsContainer .paging,
+    .listContainer .paging{
+       /* position: relative; max-width: 400px;*/ margin-bottom: 120px; 
+    }
+    /* .listTipsContainer .paging> a,
+    .listContainer .paging> a{
+        position: absolute; top: 0; 
+    } */
+    .listTipsContainer .paging> a:first-of-type,
+    .listContainer .paging> a:first-of-type{
+       /* left: 0;*/ display: none;
+    }
+    .listTipsContainer .paging> a:last-of-type,
+    .listContainer .paging> a:last-of-type{
+        /*right: 0;*/ display: none;
+    }
+    .listTipsContainer .paging ol,
+    .listContainer .paging ol{
+        text-align: center; width: 260px; margin: 0 auto;
+    }
+    .listTipsContainer .paging ol li,
+    .listContainer .paging ol li{
+        display: inline-block;
+    }
+    .listTipsContainer .paging a,
+    .listContainer .paging a{
+        color: black; font-size: 12px; font-weight: 400; text-decoration: none;
+        display: block; width: 35px; line-height: 35px; border-radius: 5px;
+    }
+    .listTipsContainer .paging  ol li:hover a,
+    .listContainer .paging ol li:hover a{
+        background-color: #282879; color: #fff;
+    }
+    .listTipsContainer .paging  ol li a.active,
+    .listContainer .paging ol li a.active{
+        background-color: #282879; color: #fff;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1279px) {
+    #searchPanel{
+        position: fixed; top: 120px; width: 100%; 
+        padding: 70px 0; z-index: 1; background-color: white;
+        display: none;
+    }
+    #searchPanel.active{
+        display: block; 
+    }
+    #searchPanel form > *{
+        margin: 0 auto; max-width: 700px;
+    }
+    #searchPanel form fieldset{
+        margin-bottom: 35px; padding: 0 3%; box-sizing: border-box;
+    }
+    #searchPanel form fieldset input[type='search']{
+         line-height:45px; width: 62.4%; border-style: none none solid; background: url("../images/search_FILL0.svg") left/25px no-repeat;
+         padding-left: 5.7%;  
+         /* width: %; */
+    }
+    #searchPanel form fieldset input::placeholder{
+        color: #c1c1c1; font-size: 16px; font-weight: 300;
+    }
+
+    #searchPanel form fieldset input[type='submit']{
+        width: 31.2%; line-height: 45px; font-size: 14px; color: #fff; background-color: #282879; 
+        margin-left: 0.7%; cursor: pointer;
+    }
+    #searchPanel div::after{
+        content: ''; display: block;clear: both;
+    }
+    #searchPanel div mark{
+        font-size: 17px; font-weight: 300; background-color: transparent;  float: left; font-style: normal;
+    }
+    #searchPanel div ul{
+        display: block; 
+    }
+    #searchPanel div ul li{
+        display: inline-block; border: 1px solid #c1c1c1; font-weight: 300; font-size: 16px; color: #c1c1c1;
+        padding:  5px 15px; 
+    }
+    #searchPanel div ul li:first-child{
+        margin-left: 1.6%;
+    }
+    #searchPanel div ul li:not(:first-child){
+        margin-left: 0.8%;
+    }
+    header{
+        border-bottom: 1px solid navy; padding: 0 3%; box-sizing: border-box;
+    }
+    header > div::after{
+        content: ""; display: block; clear: both;
+    }
+    header > div h1{
+        float: left; width: 20%; padding: 40px 2%; box-sizing: border-box;
+    }
+    header > div h1 a{
+        display: block;  max-width: 180px; line-height: 50px;
+    }
+    header > div h1 a img{
+      width: 100%; 
+    }
+    header > div nav{
+        text-align: center; float: left; width: 62%;
+    }
+    header > div nav .mui{
+        display: none;
+    }
+    header > div nav ul{
+        display: block;
+    }
+    header > div nav ul > li{
+        display: inline-block; font-weight: 600; font-size: 18px; line-height: 120px;
+        vertical-align: top;
+    }
+    header > div nav ul > li:not(:first-child){
+        margin-left: 5.2%;
+    }
+    header > div nav ul > li:hover{
+        text-decoration: underline;;
+    }
+    header > div nav ul > li ol{
+        display: none; width: 100%; position: absolute; left: 0; top: 121px;
+        text-align: center; line-height: 80px; background-color: rgba(255,255,255,0.8);
+    }
+    header > div nav ul > li ol li{
+        display: inline-block; font-weight: 700; 
+    }
+    header > div nav ul > li ol li a{
+        color: #000; text-decoration: none;
+    }
+    header > div nav ul > li ol li:hover a{
+        color: #282879; border-bottom: 2px solid #282879;
+    }
+    header > div nav ul > li ol li:not(:first-child){
+        margin-left: 8.8%;
+    }
+    
+    header > div nav ul > li ol.active{
+        display: block;
+    }
+    header > div input[type='button']{
+        text-indent: -9999px; width: 10%; border: none; float: right; padding: 40px 2%;  box-sizing: border-box;
+        background-position: center; background-size: 40px; background-repeat: no-repeat; background-color: transparent;
+        background-image: url('../images/search_FILL0.svg');
+    }
+    header > div input[type='button'].active{
+        background-image: url('../images/close_blue_FILL0.svg');
+    }
+    footer{
+        padding: 0 3%; box-sizing: border-box;
+    }
+    footer > div:first-child{
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: #c1c1c1;
+        margin-bottom: 35px;
+    }
+    footer > div:first-child div{
+       /* max-width: 1180px; margin: 0 auto;*/ line-height: 44px;
+        position: relative;
+    }
+    footer > div:first-child div ul{
+        width: 70%;
+    }
+    footer > div:first-child div ul li{
+        display: inline-block;
+    }
+    footer > div:first-child div ul li:not(:first-child){
+        margin-left: 45px;
+    }
+    footer > div:first-child div ul li a{
+        display: block; font-size: 12px; font-weight: 300;color:#000; text-decoration: none;
+    }
+    footer > div:first-child div span{
+        position: absolute; top: 0; right: 0; width: 30%; text-align: right;
+    }
+    footer > div:first-child div span a{
+        width: 25px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat;
+        display: inline-block; text-align: left;
+    }
+    footer > div:first-child div span a:nth-child(1){
+        background-image: url("../images/instagram_icon_138461.svg");
+    }
+    footer > div:first-child div span a:nth-child(2){
+        background-image: url("../images/facebook_icon_137647.svg");
+    }
+    footer > div:last-child a:first-of-type{
+        display: block;  margin-bottom: 10px;
+    }
+    footer > div:last-child a{
+        font-size: 12px; font-weight: 300; color: #000; text-decoration: none;
+    }
+    footer > div:last-child > *:not(a){
+        display: inline-block;
+    }
+    footer > div:last-child h2{
+        background: url("../images/footerlogo.png") center / contain no-repeat; text-indent: -9999px;
+        width: 126px; line-height: 23px; margin-top: 20px;
+     }
+     
+    footer > div:last-child p{
+        font-weight: 700; margin-left: 15px; font-size: 14px;
+    }
+    
+    /* bxSliderCustom */
+    .bx-wrapper{
+        border: none; box-shadow: none; 
+    }
+    .listTipsContainer .paging,
+    .listContainer .paging{
+        position: relative; max-width: 400px; margin-bottom: 120px; 
+    }
+    .listTipsContainer .paging> a,
+    .listContainer .paging> a{
+        position: absolute; top: 0; 
+    }
+    .listTipsContainer .paging> a:first-of-type,
+    .listContainer .paging> a:first-of-type{
+        left: 0;
+    }
+    .listTipsContainer .paging> a:last-of-type,
+    .listContainer .paging> a:last-of-type{
+        right: 0;
+    }
+    .listTipsContainer .paging ol,
+    .listContainer .paging ol{
+        text-align: center; width: 380px; 
+    }
+    .listTipsContainer .paging ol li,
+    .listContainer .paging ol li{
+        display: inline-block;
+    }
+    .listTipsContainer .paging a,
+    .listContainer .paging a{
+        color: black; font-size: 16px; font-weight: 400; text-decoration: none;
+        display: block; width: 35px; line-height: 35px; border-radius: 5px;
+    }
+    .listTipsContainer .paging  ol li:hover a,
+    .listContainer .paging ol li:hover a{
+        background-color: #282879; color: #fff;
+    }
+    .listTipsContainer .paging  ol li a.active,
+    .listContainer .paging ol li a.active{
+        background-color: #282879; color: #fff;
+    }
+    
+}
+@media screen and (min-width: 1280px) {
+    #searchPanel{
+        position: fixed; top: 120px; width: 100%; 
+        padding: 70px 0; z-index: 1; background-color: white;
+        display: none;
+    }
+    #searchPanel.active{
+        display: block; 
+    }
+    #searchPanel form > *{
+        margin: 0 auto; max-width: 700px;
+    }
+    #searchPanel form fieldset{
+        margin-bottom: 35px; padding: 0 3%; box-sizing: border-box;
+    }
+    #searchPanel form fieldset input[type='search']{
+         line-height:45px; width: 62.4%; border-style: none none solid; background: url("../images/search_FILL0.svg") left center/25px no-repeat;
+         padding-left: 5.7%;  
+         /* width: %; */
+    }
+    #searchPanel form fieldset input::placeholder{
+        color: #c1c1c1; font-size: 16px; font-weight: 300;
+    }
+
+    #searchPanel form fieldset input[type='submit']{
+        width: 31.2%; line-height: 45px; font-size: 14px; color: #fff; background-color: #282879; 
+        margin-left: 0.7%; cursor: pointer;
+    }
+    #searchPanel div::after{
+        content: ''; display: block;clear: both;
+    }
+    #searchPanel div mark{
+        font-size: 17px; font-weight: 300; background-color: transparent;  float: left; font-style: normal;
+    }
+    #searchPanel div ul{
+        display: block; 
+    }
+    #searchPanel div ul li{
+        display: inline-block; border: 1px solid #c1c1c1; font-weight: 300; font-size: 16px; color: #c1c1c1;
+        padding:  5px 15px; 
+    }
+    #searchPanel div ul li:first-child{
+        margin-left: 1.6%;
+    }
+    #searchPanel div ul li:not(:first-child){
+        margin-left: 0.8%;
+    }
+   
+    
+    header{
+        border-bottom: 1px solid navy; position: relative;
+    }
+    header > div{
+        max-width: 1840px; margin: 0 auto;
+    }
+    header > div::after{
+        content: ""; display: block; clear: both;
+    }
+    header > div h1{
+        float: left; width: 20%; padding: 40px 2%; box-sizing: border-box;
+    }
+    header > div h1 a{
+        display: block;  max-width: 180px; line-height: 50px;
+    }
+    header > div h1 a img{
+      width: 100%; 
+    }
+    header > div nav{
+        text-align: center; float: left; width: 62%;
+    }
+    header > div nav .mui{
+        display: none;
+    }
+    header > div nav ul{
+        display: block;
+    }
+    header > div nav ul > li{
+        display: inline-block; font-weight: 600; font-size: 18px; line-height: 120px;
+        vertical-align: top;
+    }
+    header > div nav ul > li:not(:first-child){
+        margin-left: 5.2%;
+    }
+    header > div nav ul > li:hover{
+        text-decoration: underline;;
+    }
+    header > div nav ul > li ol{
+        display: none; width: 100%; position: absolute; left: 0; top: 121px;
+        text-align: center; line-height: 80px; background-color: rgba(255,255,255,0.8);
+    }
+    header > div nav ul > li ol li{
+        display: inline-block; font-weight: 700;
+    }
+    header > div nav ul > li ol li a{
+        color: #000; text-decoration: none;
+    }
+    header > div nav ul > li ol li:hover a{
+        color: #282879; border-bottom: 2px solid #282879;
+    }
+    header > div nav ul > li ol li:not(:first-child){
+        margin-left: 8.8%;
+    }
+    
+    header > div nav ul > li ol.active{
+        display: block;
+    }
+    header > div input[type='button']{
+        text-indent: -9999px; width: 10%; border: none; float: right; padding: 40px 2%;  box-sizing: border-box;
+        background-position: center; background-size: 40px; background-repeat: no-repeat; background-color: transparent;
+        background-image: url('../images/search_FILL0.svg');
+    }
+    header > div input[type='button'].active{
+        background-image: url('../images/close_blue_FILL0.svg');
+    }
+    footer > div:first-child{
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: #c1c1c1;
+        margin-bottom: 35px;
+    }
+    footer > div:first-child div{
+        max-width: 1180px; margin: 0 auto; line-height: 44px;
+        position: relative;
+    }
+    footer > div:first-child div ul{
+        width: 70%;
+    }
+    footer > div:first-child div ul li{
+        display: inline-block;
+    }
+    footer > div:first-child div ul li:not(:first-child){
+        margin-left: 45px;
+    }
+    footer > div:first-child div ul li a{
+        display: block; font-size: 12px; font-weight: 300;color:#000; text-decoration: none;
+    }
+    footer > div:first-child div span{
+        position: absolute; top: 0; right: 0; width: 30%; text-align: right;
+    }
+    footer > div:first-child div span a{
+        width: 25px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat;
+        display: inline-block; text-align: left;
+    }
+    footer > div:first-child div span a:nth-child(1){
+        background-image: url("../images/instagram_icon_138461.svg");
+    }
+    footer > div:first-child div span a:nth-child(2){
+        background-image: url("../images/facebook_icon_137647.svg");
+    }
+    footer > div:last-child{
+        max-width: 1180px; margin: 0 auto;
+    }
+    footer > div:last-child a:first-of-type{
+        display: block;  margin-bottom: 10px;
+    }
+    footer > div:last-child a{
+        font-size: 12px; font-weight: 300; color: #000; text-decoration: none;
+    }
+    footer > div:last-child > *:not(a){
+        display: inline-block;
+    }
+    footer > div:last-child h2{
+        background: url("../images/footerlogo.png") center / contain no-repeat; text-indent: -9999px;
+        width: 126px; line-height: 23px; margin-top: 20px;
+     }
+     
+    footer > div:last-child p{
+        font-weight: 700; margin-left: 15px; font-size: 14px;
+    }
+    
+    /* bxSliderCustom */
+    .bx-wrapper{
+        border: none; box-shadow: none; 
+    }
+    .listTipsContainer .paging,
+    .listContainer .paging{
+        position: relative; max-width: 400px; margin-bottom: 120px;
+    }
+    .listTipsContainer .paging> a,
+    .listContainer .paging> a{
+        position: absolute; top: 0;
+    }
+    .listTipsContainer .paging> a:first-of-type,
+    .listContainer .paging> a:first-of-type{
+        left: 0;
+    }
+    .listTipsContainer .paging> a:last-of-type,
+    .listContainer .paging> a:last-of-type{
+        right: 0;
+    }
+    .listTipsContainer .paging ol,
+    .listContainer .paging ol{
+        text-align: center; width: 380px; 
+    }
+    .listTipsContainer .paging ol li,
+    .listContainer .paging ol li{
+        display: inline-block;
+    }
+    .listTipsContainer .paging a,
+    .listContainer .paging a{
+        color: black; font-size: 16px; font-weight: 400; text-decoration: none;
+        display: block; width: 35px; line-height: 35px; border-radius: 5px;
+    }
+    .listTipsContainer .paging  ol li:hover a,
+    .listContainer .paging ol li:hover a{
+        background-color: #282879; color: #fff;
+    }
+    .listTipsContainer .paging  ol li a.active,
+    .listContainer .paging ol li a.active{
+        background-color: #282879; color: #fff;
+    }
+    
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+        
+    </header>
+    <section class="contact">
+        <h2>니베아 문의</h2>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>
+                        의견을 들려주세요
+                        <small><mark>*</mark> 필수항목</small>
+                    </legend>
+                    <ul>
+                        <li>
+                            <label for="woman">성별</label>
+                            <span>
+                                <input type="radio" name="userGender" id="woman">
+                                <label for="woman">여성</label>
+                                <input type="radio" name="userGender" id="man">
+                                <label for="man">남성</label>
+                            </span>
+                        </li>
+                        <li>
+                            <label for="userName"><mark>*</mark>이름</label>
+                            <span>
+                                <input type="text" id="userName" placeholder="띄어쓰기 없이 최대 12자 까지 입력 가능. " required>
+                            </span>
+                        </li>
+                        <li>
+                            <label for="userFirstName"><mark>*</mark>성</label>
+                            <span>
+                                <input type="text" id="userFirstName" placeholder="입력해주세요." required>
+                            </span>
+                        </li>
+                        <li>
+                            <label for="usermail"><mark>*</mark>이메일 주소</label>
+                            <span>
+                                <input type="email" id="usermail" placeholder="_______@______.com" required>
+                            </span>
+                        </li>
+                        <li>
+                            <label for="usercall">휴대전화 번호</label>
+                            <span>
+                                <input type="text" id="usercall" placeholder="010-0000-0000">
+                            </span>
+                        </li>
+                        <li>
+                            <label for="userAddress">상세주소</label>
+                            <span>
+                                <input type="search" id="userAddress" placeholder="주소를 입력해주세요">
+                            </span>
+                        </li>
+                        <li>
+                            <label for="question"><mark>*</mark>요청 사항 분야</label>
+                            <span>
+                                <input type="radio" name="userRequest" id="question">
+                                <label for="question">질문</label>
+                                <input type="radio" name="userRequest" id="dissatisfaction">
+                                <label for="dissatisfaction">불만</label>
+                                <select>
+                                    <option value="">의견 및 기타</option>
+                                    <option value="">제품</option>
+                                    <option value="">뉴스레터</option>
+                                    <option value="">프로모션</option>
+                                    <option value="">웹사이트</option>
+                                    <option value="">회사</option>
+                                </select>
+                            </span>
+                        </li>
+                        <li>
+                            <textarea cols="30" rows="10" placeholder="*메세지 입력" required></textarea>
+                            <p>2000자 중 0자를 입력함. 2000자 남음.</p>
+                        </li>
+                    </ul>
+                    <div class="fileImportComponent">
+                        <input type="file" id="addFile">
+                        <label for="addFile">&gt; 파일찾기</label>
+                        <p>
+                            파일 크기 제한 : 50MB <br>
+                            업로드 가능한 파일 유형 및 이미지: .png, .jpg, .gif, .pdf
+                        </p>
+                    </div>
+                </fieldset>
+                <div>
+                    <h3>저희가 도와드릴게요!</h3>
+                    <p>
+                        니베아에 연락하고 싶거나 궁금한 점이 있으세요? FAQ를 확인하는 방법과 문의 양식을 이용해서 직접 연락하는 방법, 그리고 소비자 상담실에 연락하는 방법이 있습니다.<br> 니베아 소비자 상담실 : <a href="tel:+8280-023-0808"> 080-023-0808[#]</a>(수신자 부담)
+                    </p>
+                    <p>평일: 09:00 ~ 12:00 / 13:30 ~ 18:00 2) 토요일/일요일/공휴일 휴무</p>
+                    <span>
+                        정보를 등록하는 것은 바이어스도르프 개인정보처리방침을 읽었고 동의함을 의미합니다.
+                    </span>
+                </div>
+                <div>
+                    <input type="submit" value="등록하기">
+                </div>
+            </form>
+        </div>
+
+    </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

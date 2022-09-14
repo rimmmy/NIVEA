@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea</title>
+    <script src="js/jquery-3.x-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <fieldset>
+                <input type="search" id="searchfield" placeholder="검색어를 입력 해주세요" autocomplete title="검색어를 입력 해주세요">
+                <input type="submit" value="검색">
+            </fieldset>
+            <div>
+                <mark>추천 검색어</mark>
+                <ul>
+                    <li>니베아 크림</li>
+                    <li>자외선 차단제</li>
+                    <li>립글로즈</li>
+                    <li>데오드란트 종류</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/nivea.svg" alt="welcome to nivea">
+                </a>
+            </h1>
+            <nav>
+                <label for="mnav" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li>
+                        제품
+                        <ol>
+                            <li><a href="product.html">전체</a></li>
+                            <li><a href="face.html">페이스</a></li>
+                            <li><a href="body.html">바디</a></li>
+                            <li><a href="man.html">남성</a></li>
+                            <li><a href="sun.html">선</a></li>
+                            <li><a href="niveacream.html">니베아크림</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        조언
+                        <ol>
+                            <li><a href="tips.html">전체</a></li>
+                            <li><a href="goodskin.html">좋은 피부 스킨케어 팁</a></li>
+                            <li><a href="sunblock.html">자외선 차단제</a></li>
+                            <li><a href="lifestyle.html">라이프 스타일</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        새소식
+                        <ol>
+                            <li>니베아로부터 전해드리는 새 소식</li>
+                            <li><a href="newproduct.html">	&#45; 신제품 니베아 바디오일 로션</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        니베아월드
+                        <ol>
+                            <li><a href="niveaWord.html">니베아월드</a></li>
+                            <li><a href="career.html">커리어</a></li>
+                            <li><a href="history.html">히스토리</a></li>
+                            <li><a href="environment.html">기업의 사회적 책임</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" value="search" data-panel="searchPanel" class="btn_searchOpen">
+            <!-- 
+                js
+                    removeClass (btn_searchOpen)
+                    
+                    addClass (btn_searchClose)
+                css : .btn_searchOpen -> background-image 돋보기
+                    .btn_searchClose -> background-image 엑스
+             -->
+        </div>
+    </header>
+    <section class="historyContent">
+        <h2><mark>니베아 역사</mark><br>-<br> 100년 동안 만들어진 이야기/</h2>
+        <p>언제가 전 세계 모든 사람이 니베아 제품을 신뢰하는 날이 오기를 바라며 우리는 계속 연구합니다.</p>
+        <video src="mp4/history_bg.mp4"  autoplay muted loop></video>
+        <ul>
+            <li>
+                <h3>1911. 니베아를 세계로</h3>
+                <img src="images/history_icon_01.png" alt="내용과련 아이콘">
+                <p>
+                    <strong>오스카 토플로위츠+유화제인 유세릿</strong>
+                    1911년 12월, 니베아가 출시되었습니다. 눈처럼 하얀색에 영감을 받아,<br> 라틴어 nix(눈)와 nivis(눈의)에 따와 니베아라고 이름을 지었습니다. 
+                </p>
+                <ul class="historySlider">
+                    <li>
+                        <img src="images/history_01_01.png" alt="회사 창립자 - 오스카 토플로위츠 박사 사진" title="회사 창립자 - 오스카 토플로위츠 박사">
+                        <p>회사 창립자 - 오스카 토플로위츠 박사</p>
+                    </li>
+                    <li>
+                        <img src="images/history_01_02.png" alt="유세린 특허증 사진" title="유세린 특허 - 유세린 특허, 이자악 리프슈츠 박사">
+                        <p>유세린 특허 - 유세린 특허, 이자악 리프슈츠 박사</p>
+        
+                    </li>
+                    <li>
+                        <img src="images/history_01_03.png" alt="피부과 전문의이자 바이어스도르프 직원 - 폴 거손 우나 교수 사진" title="피부과 전문의이자 바이어스도르프 직원 - 폴 거손 우나 교수">
+                        <p>피부과 전문의이자 바이어스도르프 직원 - 폴 거손 우나 교수</p>
+                    </li>
+                    <li>
+                        <img src="images/history_01_04.png" alt="1885년 회사 창립 - 폴 베이 어스 도르프 사진" title="1885년 회사 창립 - 폴 베이 어스 도르프">
+                        <p>1885년 회사 창립 - 폴 베이 어스 도르프</p>
+                    </li>
+                    <li>
+                        <img src="images/history_01_05.png" alt="바이어스도르프 연구소 1914 - 1914 연구소 사진" title="바이어스도르프 연구소 1914 - 1914 연구소">
+                        <p>바이어스도르프 연구소 1914 - 1914 연구소</p>
+                    </li>
+                </ul>
+                <div>
+                    <p>모든 것은 약사이자 선견지명이 있는 기업가인 오스카 토플로위츠(Oscar Troplowitz) 박사가 화학자인 이자악 리프슈츠(Isaac Lifschutz) 박사가 개발한 유화제인 유세릿(Eucerit)의 가능성을 인지한 1911년에 시작되었습니다.</p>
+                    <p>유세릿은 물과 기름을 안정적인 상태의 크림으로 결합하는 것을 가능하게 만들었고, 처음에는 의학 분야에서 사용할 의도로 개발되었습니다. 피부과 전문의 폴 거손 우나(Paul Gerson Unna) 교수는 리프슈츠 박사의 전문성에 감탄하며 토플로위츠 박사에게 그를 소개했고, 그는 단번에 물과 기름이 결합한 유화제가 미용 크림의 완벽한 기초 성분이 될 것을 즉시 알았습니다. 이제 필요한 것은 이름뿐이었습니다.</p>
+                    <p>이름을 찾기 위해 토플로위츠 박사는 그저 크림만 보면 되었습니다. 눈처럼 하얀색에 영감을 받아, 니베아라고 이름을 지었습니다. 라틴어 nix(눈)와 nivis(눈의)에 따온 이름입니다.</p>
+                    <p>마침내 수년간의 창의적인 연구 노력이 결실을 보아, 1911년 12월, 니베아가 출시되었습니다. 전설적인 최초의 스킨케어 크림이 탄생한 것입니다. 출시 당시 토플로위츠 박사의 목표는 품질이 좋지만, 누구나 부담 없이 구매할 수 있는 제품을 만드는 것이었습니다. 니베아의 제품군은 매우 다양하여 피부에 무엇이 필요하든 전문적인 케어 효과를 볼 수 있습니다. 이렇게 토플로위츠 박사의 비전은 여전히 살아 있으며, 앞으로 100년 동안에도 계속될 것입니다.</p>
+                </div>
+            </li>
+            <li>
+                <h3>1958. 니베아 태양, 모래사장</h3>
+                <img src="images/history_icon_02.png" alt="내용과련 아이콘">
+                <p>
+                    <strong>여름 + 태양 + 선 케어</strong>
+                    1960년대에는 경제적 풍요와 차 보급률의 증가로 해변 문화가 폭발적으로 퍼져나거며 니베아 자외선 차단<br> 제품을 해변으로 가지고 온 사람이라면 누구나 이제는 하나의 상징이 된 니베아 볼을 받을 수 있었습니다.
+                </p>
+                <ul class="historySlider">
+                    <li>
+                        <img src="images/history_02_01.png" alt=" 해변에 있는 니베아 상점 사진">
+                    </li>
+                    <li>
+                        <img src="images/history_02_02.png" alt="니베아 열기구 사진">
+                    </li>
+                    <li>
+                        <img src="images/history_02_03.png" alt="차 보급률 표 사진">
+                    </li>
+                    <li>
+                        <img src="images/history_02_04.png" alt="니베아 비치볼로 놀고 있는 사진">
+                    </li>
+                </ul>
+                <div>
+                    <p>1960년대에는 경제적 풍요와 차 보급률의 증가로 점점 더 많은 사람들이 휴가를 바다에서 즐기기 시작하면서 해변 문화가 폭발적으로 퍼져나갔습니다. 이번에도 니베아는 사람들이 태양 아래에서의 시간을 충분히 즐길 수 있도록 돕는 역할을 했습니다.</p>
+                    <p>"니베아 이동 차량"은 1960년대와 70년대에 걸쳐 세계 각지의 유명한 휴양지에서 쉽게 볼 수 있었습니다. 니베아 자외선 차단 제품을 해변으로 가지고 온 사람이라면 누구나 이제는 하나의 상징이 된 니베아 볼을 받을 수 있었습니다. 이 공에 대한 수요가 너무나 폭발적이어서 사람들이 일찍부터 거리를 점령하고 기다렸기 때문에, 이 이동 차량이 해변까지 가지 못하는 경우도 종종 있었습니다.</p>
+                    <p>그들의 중대한 발견은 그 후 몇십 년 동안 다음과 같은 수많은 스킨케어의 혁신을 주도했습니다.</p>
+                    <p>
+                        SPF/자외선 차단 지수가 있는 자외선 차단제, 스프레이식 자외선 차단제, 니베아 선 얼굴용 제품과 같은 보습 선 크림, 어린이, 유아, 민감성 피부 전용 제품
+                    </p>
+                    <p>해변 문화와 자외선 차단 제품이 지난 몇 년간 변화했다는 것은 명백한 사실입니다. 하지만 니베아의 목표는 항상 변하지 않습니다. 모든 연령의 사람들이 자신이 원할 때면 언제 어디서나 태양을 즐길 수 있도록 돕는 것이 저희의 목표입니다.</p>
+                </div>
+            </li>
+            <li>
+                <h3>1986. 스킨케어의 혁명</h3>
+                <img src="images/history_icon_03.png" alt="내용과련 아이콘">
+                <p>
+                    <strong>1986년 남성 전용 제품군인 니베아 포 맨 출시</strong>
+                    1980년 우리는 알코올 프리 애프터 쉐이브 밤을 출시해 새로운 트렌드를 만들었습니다.<br>이 제품은 바로 성공했고 남성 스킨케어의 혁신을 주도했습니다.
+                </p>
+                <ul class="historySlider">
+                    <li>
+                        <img src="images/history_03_01.png" alt="니베아맨 애프터 쉐이브 제품 사진" title="니베아맨 애프터 쉐이브">
+                        <p>니베아맨 애프터 쉐이브</p>
+                    </li>
+                    <li>
+                        <img src="images/history_03_02.png" alt="니베아맨 제품 사진" title="니베아맨">
+                        <p>니베아맨</p>
+                    </li>
+                    <li>
+                        <img src="images/history_03_03.png" alt="니베아맨 쉐이빙 크림 제품 사진" title="니베아맨 쉐이빙 크림">
+                        <p>니베아맨 쉐이빙 크림</p>
+                    </li>
+                </ul>
+                <div>
+                    <p>드럭 스토어에 남성용 스킨케어 제품 코너가 준비되어 있는 것은 이제는 자연스러운 일입니다. 하지만 90년 전만 해도 남성의 스킨케어란 비누와 물이 전부였다고 해도 과언이 아닙니다. 하지만 남성들도 여성 못지않게 많은 스킨케어의 필요성을 느끼고 있습니다. 남성제품과 여성제품의 시장 규모 차이가 너무나 확연했습니다. 그래서 1922년 우리는 최초의 남성 제품인 니베아 비누를 출시했고, 몇 년 후 최초의 쉐이빙 폼도 출시했습니다. 남성들이 꿈꾸던 크림처럼 부드러운 면도를 마침내 할 수 있게 된 것입니다.</p>
+                    <p>하지만 또 해결해야 할 특별한 요구가 있었고, 1980년 우리는 알코올 프리 애프터 쉐이브 밤을 출시해 새로운 트렌드를 만들었습니다. 면도 후 자극을 더 주는 것이 아니라, 자극을 진정시키고 완화하는 다용도의 애프터쉐이브이면서 가격도 적당한 제품을 남성들이 처음으로 만나게 된 것입니다. 이 제품은 바로 성공했고 남성 스킨케어의 혁신을 주도했습니다.</p>
+                    <p>우리는 남성들이 그들 전용 제품을 원하고 필요로 한다는 것을 증명했습니다. 그리고 1986년 우리는 그들의 소원을 이루었습니다. 남성들이 더 이상 부인, 누나, 여동생, 어머니의 스킨케어 제품을 사용할 필요가 없게 되었습니다. 이제 그들에게도 남성 전용 제품군인 니베아 포 맨이 생겼습니다. 크림에서 전기면도기. 피지 컨트롤에서 안티에이징. 페이스 스크럽에서 바디 워시. 쉐이빙 비누로 시작한 니베아 포 맨의 제품 목록은 크게 증가했습니다. 남성의 스킨케어 요구가 진화하는 만큼, 이 목록 또한 계속해서 증가할 것입니다.</p>
+                </div>
+            </li>
+            <li>
+                <h3>1998. 니베아의 월드 프리미어 제품</h3>
+                <img src="images/history_icon_04.png" alt="내용과련 아이콘">
+                <p>
+                    <strong>최초의 Q10 함유 크림</strong>
+                    1998년 시장에 나온 Q10이 함유된 최초의 니베아<br> 크림은 뛰어난 효과로 큰 성공을 거뒀습니다. 
+                </p>
+                <ul class="historySlider">
+                    <li>
+                        <img src="images/history_04_01.png" alt="니베아 Q10 제품 사진" title="니베아 Q10">
+                        <p>니베아 Q10</p>
+                    </li>
+                    <li>
+                        <img src="images/history_04_02.png" alt="니베아 안티링클 크림 1998 광고 사진" title="니베아 안티링클 크림 1998">
+                        <p>니베아 안티링클 크림 1998</p>
+                    </li>
+                    <li>
+                        <img src="images/history_04_03.png" alt="Q10 함유 니베아 크림 효과 사진" title="Q10 함유 니베아 크림">
+                        <p>Q10 함유 니베아 크림</p>
+                    </li>
+                </ul>
+                <div>
+                    <p>1998년 시장에 나온 Q10이 함유된 최초의 니베아 크림은 뛰어난 효과로 큰 성공을 거뒀습니다. 슈타브(Stab) 박사가 "우리의 Q10 제품이 주름을 눈에 띄게 매끈하게 만든다는 것이 과학적으로 명확하게 증명되었다." 라고 말한 바와 같습니다. 20년도 더 전에 니베아의 한 뛰어난 생물학자가 스킨케어 성분을 연구하기 시작했습니다. 노화 피부에는 Q10이 적다는 것을 발견하면서, 니베아 비세이지 라인을 만들게 되었습니다.</p>
+                    <p>오늘날 니베아 Q10 제품은 몇 초 당 하나씩 팔리는 제품이 되었습니다. 그리고 니베아 비세이지 안티링클 Q10 데이 크림은 우리의 가장 잘 나가는 안티링클 크림 중 하나가 되었습니다. 이제는 니베아 포 맨부터 니베아 선까지 모든 관련된 제품군에서 Q10이 풍부하게 함유된 제품을 발견하실 수 있습니다.</p>
+                </div>
+            </li>
+            <li>
+                <h3>2011~2014년</h3>
+                <img src="images/history_icon_05.png" alt="내용과련 아이콘">
+                <p>
+                    <strong> 850명 이상의 과학자 + 피부 연구 센터</strong>
+                    소비자들의 기호를 연구하며 피부에 대한 지식을 기초로 두고서 질문해야 한다.<br> 무엇이 피부 고유의 기능을 지원하고 촉진할 것인가?"
+                </p>
+                <ul class="historySlider">
+                    <li>
+                        <img src="images/history_05_01.png" alt="니베아 인비저블 블랙 앤 화이트 데오드란트 광고 사진" title="니베아 인비저블 블랙 앤 화이트 데오드란트">
+                        <p>니베아 인비저블 블랙 앤 화이트 데오드란트</p>
+                    </li>
+                    <li>
+                        <img src="images/history_05_02.png" alt="인샤워 바디 로션 제품 사진" title="인샤워 바디 로션">
+                        <p>인샤워 바디 로션</p>
+                    </li>
+                </ul>
+                <div>
+                    <p>오스카 토플로위츠(Oscar Troplowitz) 박사, 폴 거손 우나(Paul Gerson Unna) 교수, 이자악 리프슈츠(Isaac Lifschütz) 박사. 100년 전 니베아가 탄생했을 때에는 거의 모든 연구를 이 세 사람이 했습니다. 지금은 상황이 완전히 달라졌습니다. 현재 우리는 850명 이상의 과학자를 고용하고 있습니다. 함부르크에 있는 피부 연구 센터는 세계적으로 가장 선진적인 스킨케어 기관 중 하나로 인정받고 있습니다. 연구 담당 부사장인 호르스트 벵크(Horst Wenck) 박사는 "피부 연구는 언제나 우리의 성공적인 포뮬러의 일부였다."고 말합니다. 이것은 우리가 제품을 어떻게 개발하는지를 보면 명백해집니다.</p>
+                    <p>"안정적으로 물과 기름이 결합된 유화제인 유세릿을 개발한 것이 우리의 최초의 성취 중 하나입니다. 그것은 니베아 크림의 기초 성분이 되었고, 니베아 크림은 우리에게 현대 스킨케어의 시대를 열어줬습니다." 우리의 연구에 대한 헌신으로 지난 몇 년간 스킨케어에 많은 기술적 발전이 있었고, 오늘날 우리는 이것을 당연한 것으로 여기고 있습니다. 스킨 크림, 바디 로션, SPF 자외선 차단제, 알코올 프리 애프터쉐이브, 펌프 액션 스프레이, 원숙한 피부를 위한 스킨케어, Q10이 포함된 안티에이징 제품. 이 모든 것을 비롯한 여러 제품이 니베아에서 출시되었습니다.</p>
+                    <p>하지만 이런 획기적인 제품을 개발하기 전에 먼저 바른 질문을 하는 것이 필요하다고 벵크 박사는 말합니다. "한편으로는 소비자들의 기호를 연구하며 질문해야 한다. 사람들이 스킨케어에 기대하는 것과 필요로 하는 것이 무엇일까? 다른 한편으로는 피부의 모든 측면 하나하나에 관해 연구를 수행해야 한다. 그렇게 피부에 대한 지식을 기초로 두고서 질문해야 한다. 무엇이 피부 고유의 기능을 지원하고 촉진할 것인가?" "이 두 측면이 조화를 이루어야 새롭고 진정으로 혁신적인 스킨케어 제품을 개발하는 것이 가능하다."</p>
+                </div>
+            </li>
+            <li>
+                <h3>오늘 그리고 내일</h3>
+                <p>
+                    <strong>당신과 평생 함께하는 니베아.</strong>
+                    당신의 직업과 사는 곳에 상관없이,<br>우리는 여기서 당신이 평생토록 더 나은 스킨케어를 즐길 수 있도록 돕겠습니다.
+                </p>
+            </li>
+        </ul>
+        <aside>
+            <ol>
+                <li>
+                    1911년 
+                </li>
+                <li>
+                    1958년
+                </li>
+                <li>
+                    1986년
+                </li>
+                <li>
+                    1998년
+                </li>
+                <li>
+                    2011~2014년
+                </li>
+                <li>
+                    오늘 그리고 내일
+                </li>
+            </ol>
+        </aside>
+   </section>
+   
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="userAgreements.html">이용약관</a></li>
+                    <li><a href="personalInformation.html">개인정보처리방침</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="beiersdorf.html">법적고지</a></li>
+                    <li><a href="https://www.nivea.com/">NIVEA Global </a></li>
+                </ul>
+                <span>
+                    <!-- <p>SNS에 연결해 보세요</p> -->
+                    <a href="https://www.instagram.com/niveakorea/">instagram</a> 
+                    <a href="https://www.facebook.com/niveakorea/">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="faq.html">무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</a>
+            <a href="history.html">니베아 역사 	&#45; 100년 동안 만들어진 이야기/ </a> <a href=" environment.html">니베아가 환경을 대하는 방법 </a>
+            <br>
+            <h2>beiersdorf</h2>
+            <p>CopyrightⓒBeiersdorf2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
