@@ -3077,11 +3077,11 @@
     .detailTipsContainer .tipsbackground> .slider1wayContent ul li dl dd{
         font-size: 15px; font-weight: 400; color: #797c80;margin-bottom: 40px; line-height: 30px; 
     }
-    .detailTipsContainer .tipsbackground> .slider1wayContent .bx-wrapper .bx-controls .bx-pager{
-        top: 10%; left: 0;
-    }
+    /* .detailTipsContainer .tipsbackground> .slider1wayContent .bx-wrapper .bx-controls .bx-pager{
+        bottom: 0; left: 0;
+    } */
     .detailTipsContainer .tipsbackground> .slider1wayContent .bx-wrapper .bx-controls .bx-pager .bx-pager-item{
-        display: block; margin-bottom: 25px;
+        display: inline-block; 
     }
     .detailTipsContainer .tipsbackground> .slider1wayContent .bx-wrapper .bx-controls .bx-pager .bx-pager-item a{
         background-color: #eaeaea;
@@ -5039,10 +5039,10 @@
         font-size: 18px; font-weight: 400; color: #797c80;margin-bottom: 40px; line-height: 30px; 
     }
     .detailTipsContainer .tipsbackground> .slider1wayContent .bx-wrapper .bx-controls .bx-pager{
-       bottom: 0;
+        top: 150px; left: 0;
     }
     .detailTipsContainer .tipsbackground> .slider1wayContent .bx-wrapper .bx-controls .bx-pager .bx-pager-item{
-        display: inline-block; 
+        display: block; margin-bottom: 25px;
     }
     .detailTipsContainer .tipsbackground> .slider1wayContent .bx-wrapper .bx-controls .bx-pager .bx-pager-item a{
         background-color: #eaeaea;
