@@ -4007,11 +4007,11 @@
         background-repeat: no-repeat; background-position: top center; background-size: contain;
         line-height: 320px; text-align: center; font-size: 40px; font-weight: 400; 
     }
-    .listContainer.product h2{background-image: url("../images/._nivea-product-page.png"); color: #444;}
-    .listContainer.face h2{background-image: url("../images/._nivea-product-page_face.png");color: #444;}
-    .listContainer.body h2{background-image: url("../images/._nivea-product-page_body.png");color: #eaeaea;}
-    .listContainer.man h2{background-image: url("../images/._nivea-product-page_man.png");color: #eaeaea;}
-    .listContainer.sun h2{background-image: url("../images/._nivea-product-page_sun.png");color: #444;}
+    .listContainer.product h2{background-image: url("../images/nivea-product-page.png"); color: #444;}
+    .listContainer.face h2{background-image: url("../images/nivea-product-page_face.png");color: #444;}
+    .listContainer.body h2{background-image: url("../images/nivea-product-page_body.png");color: #eaeaea;}
+    .listContainer.man h2{background-image: url("../images/nivea-product-page_man.png");color: #eaeaea;}
+    .listContainer.sun h2{background-image: url("../images/nivea-product-page_sun.png");color: #444;}
     .listContainer> div,
     .listContainer> ul{
         max-width: 1180px; margin: 0 auto;
