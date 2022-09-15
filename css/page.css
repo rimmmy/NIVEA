@@ -5053,10 +5053,10 @@
         background-color: #6891ca;
     }
     .detailTipsContainer .tipsbackground> .slider1wayContent .bx-wrapper .bx-controls .bx-controls-direction .bx-prev{
-        left: 0; background: none;
+        left: 0; background: none; display: none;
     }
     .detailTipsContainer .tipsbackground> .slider1wayContent .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
-        right: 0px; background: url("../images/arrow_forward_ios_FILL0.svg") center no-repeat; top: 225px;
+        right: 30px; background: url("../images/arrow_forward_ios_FILL0.svg") center no-repeat; top: 225px;
     }
     .detailTipsContainer .tipsbackground> .slider1wayContent .bx-wrapper .bx-controls .bx-controls-direction .bx-next:hover{
         background: url("../images/arrow_forward_ios_blue_FILL0.svg") center no-repeat;
