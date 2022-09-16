@@ -2864,10 +2864,10 @@
         display: block; font-size: 15px; font-weight: 700; color: #444; margin-bottom: 10px;
     }
     .detailTipsContainer .tipsbackground> .groupSlider .bx-wrapper .bx-controls .bx-pager{
-        top: 120px; left: 0px;
+        bottom: 0;
     }
     .detailTipsContainer .tipsbackground> .groupSlider .bx-wrapper .bx-controls .bx-pager .bx-pager-item{
-        display: block; margin-bottom: 25px;
+        display: inline-block;
     }
     .detailTipsContainer .tipsbackground> .groupSlider .bx-wrapper .bx-controls .bx-pager .bx-pager-item a{
         background-color: white;
