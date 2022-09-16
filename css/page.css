@@ -4803,10 +4803,10 @@
         display: block; font-size: 18px; font-weight: 700; color: #444; margin-bottom: 20px;
     }
     .detailTipsContainer .tipsbackground> .groupSlider .bx-wrapper .bx-controls .bx-pager{
-        top: 215px; left: 0px;
+        bottom: 0;
     }
     .detailTipsContainer .tipsbackground> .groupSlider .bx-wrapper .bx-controls .bx-pager .bx-pager-item{
-        display: block; margin-bottom: 25px;
+        display: inline-block;
     }
     .detailTipsContainer .tipsbackground> .groupSlider .bx-wrapper .bx-controls .bx-pager .bx-pager-item a{
         background-color: white;
