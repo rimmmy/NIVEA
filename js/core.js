@@ -190,41 +190,41 @@ function historyEvent(){
          console.log(scroll_top);
         
        if(matchMedia("screen and (min-width: 1280px)").matches){
-        if(scroll_top > 662 && scroll_top<1640){
+        if(scroll_top > 790 && scroll_top < 1750){
             $('.historyContent aside').addClass('active');
             $('.historyContent aside').css('background-image','url("images/history_asdie_01.png")');
         }
-        else if(scroll_top > 1640 && scroll_top<2700){
+        else if(scroll_top > 1750 && scroll_top < 2963){
             $('.historyContent aside').css('background-image','url("images/history_asdie_02.png")');
         }
-        else if(scroll_top > 2700 && scroll_top<3600){
+        else if(scroll_top > 2963 && scroll_top < 3955){
             $('.historyContent aside').css('background-image','url("images/history_asdie_03.png")');
         }
-        else if(scroll_top > 3600 && scroll_top<4500){
+        else if(scroll_top > 3955 && scroll_top < 4804){
             $('.historyContent aside').css('background-image','url("images/history_asdie_04.png")');
         }
-        else if(scroll_top > 4500 && scroll_top<5000){
+        else if(scroll_top > 4804 && scroll_top < 5255){
             $('.historyContent aside').css('background-image','url("images/history_asdie_05.png")');
         }
-        else if(scroll_top > 5000 && scroll_top<6000){
+        else if(scroll_top > 5255 ){
             $('.historyContent aside').removeClass('active');
         }
        }
        if(matchMedia("screen and (min-width: 768px) and (max-width: 1279px)").matches){
-        if(scroll_top > 662 && scroll_top<2018){
+        if(scroll_top > 662 && scroll_top < 2018){
             $('.historyContent aside').addClass('active');
             $('.historyContent aside').css('background-image','url("images/history_asdie_01.png")');
         }
-        else if(scroll_top > 2018 && scroll_top<3630){
+        else if(scroll_top > 2018 && scroll_top < 3630){
             $('.historyContent aside').css('background-image','url("images/history_asdie_02.png")');
         }
-        else if(scroll_top > 3630 && scroll_top<5105){
+        else if(scroll_top > 3630 && scroll_top < 5105){
             $('.historyContent aside').css('background-image','url("images/history_asdie_03.png")');
         }
-        else if(scroll_top > 5105 && scroll_top<6415){
+        else if(scroll_top > 5105 && scroll_top < 6415){
             $('.historyContent aside').css('background-image','url("images/history_asdie_04.png")');
         }
-        else if(scroll_top > 6415 && scroll_top<7600){
+        else if(scroll_top > 6415 && scroll_top < 7600){
             $('.historyContent aside').css('background-image','url("images/history_asdie_05.png")');
         }
         else if(scroll_top > 7600){
