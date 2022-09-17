@@ -84,7 +84,7 @@ function bestSlider(){
 function tipsEffect(){
     var canvas = $(".goodTipsBox ol");
     var menu = $(".goodTipsBox ol li");
-    var path = "../images/";
+    var path = "images/";
     var ext = ".png";
 
     $(menu).hover(function(){
