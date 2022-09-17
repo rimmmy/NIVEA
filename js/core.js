@@ -203,10 +203,10 @@ function historyEvent(){
         else if(scroll_top > 3955 && scroll_top < 4804){
             $('.historyContent aside').css('background-image','url("images/history_asdie_04.png")');
         }
-        else if(scroll_top > 4804 && scroll_top < 5255){
+        else if(scroll_top > 4804 && scroll_top < 6050){
             $('.historyContent aside').css('background-image','url("images/history_asdie_05.png")');
         }
-        else if(scroll_top > 5255 ){
+        else if(scroll_top > 6050 ){
             $('.historyContent aside').removeClass('active');
         }
        }
